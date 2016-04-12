@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8016240D1CBD537400818F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016240C1CBD537400818F54 /* main.m */; };
+		801624121CBD53FC00818F54 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 801624101CBD53FC00818F54 /* Default.png */; };
+		801624131CBD53FC00818F54 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 801624111CBD53FC00818F54 /* Icon.png */; };
+		80435B8D1CBD55FE003F8C72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435B8C1CBD55FE003F8C72 /* QuartzCore.framework */; };
+		80435B8F1CBD560F003F8C72 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435B8E1CBD560F003F8C72 /* OpenGLES.framework */; };
+		80435B921CBD56EE003F8C72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435B911CBD56EE003F8C72 /* UIKit.framework */; };
+		80435B941CBD56F5003F8C72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435B931CBD56F5003F8C72 /* Foundation.framework */; };
+		80435B961CBD56FD003F8C72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435B951CBD56FD003F8C72 /* CoreGraphics.framework */; };
+		80435BA31CBD57CA003F8C72 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80435B9D1CBD57CA003F8C72 /* GLView.mm */; };
+		80435BA41CBD57CA003F8C72 /* HelloArrowAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80435B9F1CBD57CA003F8C72 /* HelloArrowAppDelegate.mm */; };
+		80435BA51CBD57CA003F8C72 /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80435BA11CBD57CA003F8C72 /* RenderingEngine1.cpp */; };
+		80435BA61CBD57CA003F8C72 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80435BA21CBD57CA003F8C72 /* RenderingEngine2.cpp */; };
+		80435BA81CBD5C79003F8C72 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 801623E61CBD518300818F54 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		801623E21CBD518300818F54 /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801623E61CBD518300818F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/stevepro/GitHubX/StevePro7/iPhone3D/Chap01/HelloArrow/Info.plist; sourceTree = "<absolute>"; };
+		8016240C1CBD537400818F54 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		801624101CBD53FC00818F54 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		801624111CBD53FC00818F54 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		80435B8C1CBD55FE003F8C72 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80435B8E1CBD560F003F8C72 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80435B911CBD56EE003F8C72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80435B931CBD56F5003F8C72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80435B951CBD56FD003F8C72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80435B981CBD5782003F8C72 /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.frag; path = Shaders/Simple.frag; sourceTree = "<group>"; };
+		80435B991CBD5782003F8C72 /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.vert; path = Shaders/Simple.vert; sourceTree = "<group>"; };
+		80435B9C1CBD57CA003F8C72 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		80435B9D1CBD57CA003F8C72 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		80435B9E1CBD57CA003F8C72 /* HelloArrowAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloArrowAppDelegate.h; path = Classes/HelloArrowAppDelegate.h; sourceTree = "<group>"; };
+		80435B9F1CBD57CA003F8C72 /* HelloArrowAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloArrowAppDelegate.mm; path = Classes/HelloArrowAppDelegate.mm; sourceTree = "<group>"; };
+		80435BA01CBD57CA003F8C72 /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IRenderingEngine.hpp; path = Classes/IRenderingEngine.hpp; sourceTree = "<group>"; };
+		80435BA11CBD57CA003F8C72 /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine1.cpp; path = Classes/RenderingEngine1.cpp; sourceTree = "<group>"; };
+		80435BA21CBD57CA003F8C72 /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine2.cpp; path = Classes/RenderingEngine2.cpp; sourceTree = "<group>"; };
+		80435BA71CBD581C003F8C72 /* HelloArrow_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloArrow_Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801623DF1CBD518300818F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80435B961CBD56FD003F8C72 /* CoreGraphics.framework in Frameworks */,
+				80435B941CBD56F5003F8C72 /* Foundation.framework in Frameworks */,
+				80435B921CBD56EE003F8C72 /* UIKit.framework in Frameworks */,
+				80435B8F1CBD560F003F8C72 /* OpenGLES.framework in Frameworks */,
+				80435B8D1CBD55FE003F8C72 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		801623D91CBD518300818F54 = {
+			isa = PBXGroup;
+			children = (
+				80435B971CBD574C003F8C72 /* Shaders */,
+				8016240B1CBD529100818F54 /* Classes */,
+				8016240F1CBD53B800818F54 /* Other Sources */,
+				8016240E1CBD539300818F54 /* Resources */,
+				80435B901CBD5611003F8C72 /* Frameworks */,
+				801623E31CBD518300818F54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		801623E31CBD518300818F54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801623E21CBD518300818F54 /* HelloArrow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8016240B1CBD529100818F54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80435B9C1CBD57CA003F8C72 /* GLView.h */,
+				80435B9D1CBD57CA003F8C72 /* GLView.mm */,
+				80435B9E1CBD57CA003F8C72 /* HelloArrowAppDelegate.h */,
+				80435B9F1CBD57CA003F8C72 /* HelloArrowAppDelegate.mm */,
+				80435BA01CBD57CA003F8C72 /* IRenderingEngine.hpp */,
+				80435BA11CBD57CA003F8C72 /* RenderingEngine1.cpp */,
+				80435BA21CBD57CA003F8C72 /* RenderingEngine2.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8016240E1CBD539300818F54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				801624101CBD53FC00818F54 /* Default.png */,
+				801624111CBD53FC00818F54 /* Icon.png */,
+				801623E61CBD518300818F54 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8016240F1CBD53B800818F54 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80435BA71CBD581C003F8C72 /* HelloArrow_Prefix.pch */,
+				8016240C1CBD537400818F54 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80435B901CBD5611003F8C72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80435B951CBD56FD003F8C72 /* CoreGraphics.framework */,
+				80435B931CBD56F5003F8C72 /* Foundation.framework */,
+				80435B911CBD56EE003F8C72 /* UIKit.framework */,
+				80435B8C1CBD55FE003F8C72 /* QuartzCore.framework */,
+				80435B8E1CBD560F003F8C72 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80435B971CBD574C003F8C72 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				80435B981CBD5782003F8C72 /* Simple.frag */,
+				80435B991CBD5782003F8C72 /* Simple.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801623E11CBD518300818F54 /* HelloArrow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801624051CBD518300818F54 /* Build configuration list for PBXNativeTarget "HelloArrow" */;
+			buildPhases = (
+				801623DE1CBD518300818F54 /* Sources */,
+				801623DF1CBD518300818F54 /* Frameworks */,
+				801623E01CBD518300818F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloArrow;
+			productName = HelloArrow;
+			productReference = 801623E21CBD518300818F54 /* HelloArrow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801623DA1CBD518300818F54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					801623E11CBD518300818F54 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 801623DD1CBD518300818F54 /* Build configuration list for PBXProject "HelloArrow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801623D91CBD518300818F54;
+			productRefGroup = 801623E31CBD518300818F54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801623E11CBD518300818F54 /* HelloArrow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801623E01CBD518300818F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801624131CBD53FC00818F54 /* Icon.png in Resources */,
+				801624121CBD53FC00818F54 /* Default.png in Resources */,
+				80435BA81CBD5C79003F8C72 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801623DE1CBD518300818F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80435BA41CBD57CA003F8C72 /* HelloArrowAppDelegate.mm in Sources */,
+				8016240D1CBD537400818F54 /* main.m in Sources */,
+				80435BA51CBD57CA003F8C72 /* RenderingEngine1.cpp in Sources */,
+				80435BA31CBD57CA003F8C72 /* GLView.mm in Sources */,
+				80435BA61CBD57CA003F8C72 /* RenderingEngine2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		801624031CBD518300818F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		801624041CBD518300818F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		801624061CBD518300818F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HelloArrow_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		801624071CBD518300818F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HelloArrow_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801623DD1CBD518300818F54 /* Build configuration list for PBXProject "HelloArrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801624031CBD518300818F54 /* Debug */,
+				801624041CBD518300818F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801624051CBD518300818F54 /* Build configuration list for PBXNativeTarget "HelloArrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801624061CBD518300818F54 /* Debug */,
+				801624071CBD518300818F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801623DA1CBD518300818F54 /* Project object */;
+}
