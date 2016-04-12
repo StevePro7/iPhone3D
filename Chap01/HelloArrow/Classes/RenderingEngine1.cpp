@@ -55,18 +55,18 @@ void RenderingEngine1::Initialize(int width, int height)
                                  GL_COLOR_ATTACHMENT0_OES,
                                  GL_RENDERBUFFER_OES,
                                  m_renderbuffer);
-
+    
     glViewport(0, 0, width, height);
-
+    
     glMatrixMode(GL_PROJECTION);
-
+    
     // Initialize the projection matrix.
     const float maxX = 2;
     const float maxY = 3;
     glOrthof(-maxX, +maxX, -maxY, +maxY, -1, 1);
-
+    
     glMatrixMode(GL_MODELVIEW);
-
+    
     // Initialize the rotation animation state.
     OnRotate(DeviceOrientationPortrait);
     m_currentAngle = m_desiredAngle;
@@ -110,7 +110,7 @@ void RenderingEngine1::UpdateAnimation(float timeStep)
     
     float degrees = timeStep * 360 * RevolutionsPerSecond;
     m_currentAngle += degrees * direction;
-
+    
     // Normalize the angle to [0, 360)
     if (m_currentAngle >= 360)
         m_currentAngle -= 360;
@@ -130,11 +130,11 @@ void RenderingEngine1::OnRotate(DeviceOrientation orientation)
         case DeviceOrientationLandscapeLeft:
             angle = 270;
             break;
-
+            
         case DeviceOrientationPortraitUpsideDown:
             angle = 180;
             break;
-
+            
         case DeviceOrientationLandscapeRight:
             angle = 90;
             break;

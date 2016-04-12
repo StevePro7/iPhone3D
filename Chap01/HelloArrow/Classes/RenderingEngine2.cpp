@@ -70,7 +70,7 @@ void RenderingEngine2::Initialize(int width, int height)
     glViewport(0, 0, width, height);
     
     m_simpleProgram = BuildProgram(SimpleVertexShader, SimpleFragmentShader);
-
+    
     glUseProgram(m_simpleProgram);
     
     // Initialize the projection matrix.
@@ -103,7 +103,7 @@ void RenderingEngine2::ApplyRotation(float degrees) const
     float c = std::cos(radians);
     float zRotation[16] = {
         c, s, 0, 0,
-       -s, c, 0, 0,
+        -s, c, 0, 0,
         0, 0, 1, 0,
         0, 0, 0, 1
     };
@@ -157,7 +157,7 @@ void RenderingEngine2::UpdateAnimation(float timeStep)
     
     float degrees = timeStep * 360 * RevolutionsPerSecond;
     m_currentAngle += degrees * direction;
-
+    
     // Normalize the angle to [0, 360)
     if (m_currentAngle >= 360)
         m_currentAngle -= 360;
@@ -177,11 +177,11 @@ void RenderingEngine2::OnRotate(DeviceOrientation orientation)
         case DeviceOrientationLandscapeLeft:
             angle = 270;
             break;
-
+            
         case DeviceOrientationPortraitUpsideDown:
             angle = 180;
             break;
-
+            
         case DeviceOrientationLandscapeRight:
             angle = 90;
             break;

@@ -15,20 +15,20 @@ const bool ForceES1 = false;
     if (self = [super initWithFrame:frame]) {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) super.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES2;
         m_context = [[EAGLContext alloc] initWithAPI:api];
-
+        
         if (!m_context || ForceES1) {
             api = kEAGLRenderingAPIOpenGLES1;
             m_context = [[EAGLContext alloc] initWithAPI:api];
         }
-
+        
         if (!m_context || ![EAGLContext setCurrentContext:m_context]) {
             [self release];
             return nil;
         }
-
+        
         if (api == kEAGLRenderingAPIOpenGLES1) {
             NSLog(@"Using OpenGL ES 1.1");
             m_renderingEngine = CreateRenderer1();
@@ -36,30 +36,30 @@ const bool ForceES1 = false;
             NSLog(@"Using OpenGL ES 2.0");
             m_renderingEngine = CreateRenderer2();
         }
-
+        
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
         
         m_renderingEngine->Initialize(CGRectGetWidth(frame), CGRectGetHeight(frame));
         
         [self drawView: nil];
         m_timestamp = CACurrentMediaTime();
-
+        
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
-
+                          forMode:NSDefaultRunLoopMode];
+        
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
         
         [[NSNotificationCenter defaultCenter]
-            addObserver:self
-            selector:@selector(didRotate:)
-            name:UIDeviceOrientationDidChangeNotification
-            object:nil];
+         addObserver:self
+         selector:@selector(didRotate:)
+         name:UIDeviceOrientationDidChangeNotification
+         object:nil];
     }
     return self;
 }
@@ -78,7 +78,7 @@ const bool ForceES1 = false;
         m_timestamp = displayLink.timestamp;
         m_renderingEngine->UpdateAnimation(elapsedSeconds);
     }
-
+    
     m_renderingEngine->Render();
     [m_context presentRenderbuffer:GL_RENDERBUFFER];
 }
