@@ -153,7 +153,7 @@ inline QuaternionT<T> QuaternionT<T>::CreateFromVectors(const Vector3<T>& v0, co
     Vector3<T> c = v0.Cross(v1);
     T d = v0.Dot(v1);
     T s = std::sqrt((1 + d) * 2);
-
+    
     QuaternionT<T> q;
     q.x = c.x / s;
     q.y = c.y / s;
