@@ -34,7 +34,7 @@ struct Vector2 {
         x *= s;
         y *= s;
     }
-    Vector2 Normalized() const 
+    Vector2 Normalized() const
     {
         Vector2 v = *this;
         v.Normalize();
@@ -83,7 +83,7 @@ struct Vector3 {
         y *= s;
         z *= s;
     }
-    Vector3 Normalized() const 
+    Vector3 Normalized() const
     {
         Vector3 v = *this;
         v.Normalize();

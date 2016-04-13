@@ -132,18 +132,18 @@ void RenderingEngine2::Initialize(int width, int height)
                               GL_DEPTH_ATTACHMENT,
                               GL_RENDERBUFFER,
                               m_depthRenderbuffer);
-
+    
     // Bind the color buffer for rendering.
     glBindRenderbuffer(GL_RENDERBUFFER, m_colorRenderbuffer);
     
     // Set up some GL state.
     glViewport(0, 0, width, height);
     glEnable(GL_DEPTH_TEST);
-
+    
     // Build the GLSL program.
     m_simpleProgram = BuildProgram(SimpleVertexShader, SimpleFragmentShader);
     glUseProgram(m_simpleProgram);
-
+    
     // Set the projection matrix.
     GLint projectionUniform = glGetUniformLocation(m_simpleProgram, "Projection");
     mat4 projectionMatrix = mat4::Frustum(-1.6f, 1.6, -2.4, 2.4, 5, 10);
@@ -154,7 +154,7 @@ void RenderingEngine2::Render() const
 {
     GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
     GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
-
+    
     glClearColor(0.5f, 0.5f, 0.5f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
@@ -163,7 +163,7 @@ void RenderingEngine2::Render() const
     
     mat4 rotation(m_animation.Current.ToMatrix());
     mat4 translation = mat4::Translate(0, 0, -7);
-
+    
     // Set the model-view matrix.
     GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
     mat4 modelviewMatrix = rotation * translation;
@@ -171,22 +171,22 @@ void RenderingEngine2::Render() const
     
     // Draw the cone.
     {
-      GLsizei stride = sizeof(Vertex);
-      const GLvoid* pCoords = &m_cone[0].Position.x;
-      const GLvoid* pColors = &m_cone[0].Color.x;
-      glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
-      glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
-      glDrawArrays(GL_TRIANGLE_STRIP, 0, m_cone.size());
+        GLsizei stride = sizeof(Vertex);
+        const GLvoid* pCoords = &m_cone[0].Position.x;
+        const GLvoid* pColors = &m_cone[0].Color.x;
+        glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
+        glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, m_cone.size());
     }
     
     // Draw the disk that caps off the base of the cone.
     {
-      GLsizei stride = sizeof(Vertex);
-      const GLvoid* pCoords = &m_disk[0].Position.x;
-      const GLvoid* pColors = &m_disk[0].Color.x;
-      glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
-      glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
-      glDrawArrays(GL_TRIANGLE_FAN, 0, m_disk.size());
+        GLsizei stride = sizeof(Vertex);
+        const GLvoid* pCoords = &m_disk[0].Position.x;
+        const GLvoid* pColors = &m_disk[0].Color.x;
+        glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
+        glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+        glDrawArrays(GL_TRIANGLE_FAN, 0, m_disk.size());
     }
     
     glDisableVertexAttribArray(positionSlot);
@@ -221,7 +221,7 @@ void RenderingEngine2::OnRotate(DeviceOrientation orientation)
             direction = vec3(0, -1, 0);
             break;
             
-        case DeviceOrientationFaceDown:       
+        case DeviceOrientationFaceDown:
             direction = vec3(0, 0, -1);
             break;
             
