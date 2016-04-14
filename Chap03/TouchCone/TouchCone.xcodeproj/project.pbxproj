@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80978B101CBFBA4500DAC8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80978B0F1CBFBA4500DAC8DC /* main.m */; };
 		80978B371CBFBAC500DAC8DC /* Simple.frag in Resources */ = {isa = PBXBuildFile; fileRef = 80978B351CBFBAC500DAC8DC /* Simple.frag */; };
 		80978B381CBFBAC500DAC8DC /* Simple.vert in Resources */ = {isa = PBXBuildFile; fileRef = 80978B361CBFBAC500DAC8DC /* Simple.vert */; };
 		80978B461CBFBAD400DAC8DC /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80978B3B1CBFBAD400DAC8DC /* GLView.mm */; };
@@ -23,12 +22,12 @@
 		80978B591CBFBB3B00DAC8DC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80978B541CBFBB3B00DAC8DC /* OpenGLES.framework */; };
 		80978B5A1CBFBB3B00DAC8DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80978B551CBFBB3B00DAC8DC /* QuartzCore.framework */; };
 		80978B5B1CBFBB3B00DAC8DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80978B561CBFBB3B00DAC8DC /* UIKit.framework */; };
+		80BF2DE61CBFFE30006762AD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80BF2DE51CBFFE30006762AD /* Info.plist */; };
+		80BF2DE81CBFFE36006762AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BF2DE71CBFFE36006762AD /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80978B0A1CBFBA4500DAC8DC /* TouchCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchCone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		80978B0E1CBFBA4500DAC8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TouchCone/Info.plist; sourceTree = "<group>"; };
-		80978B0F1CBFBA4500DAC8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TouchCone/main.m; sourceTree = "<group>"; };
 		80978B351CBFBAC500DAC8DC /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.frag; path = Shaders/Simple.frag; sourceTree = "<group>"; };
 		80978B361CBFBAC500DAC8DC /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.vert; path = Shaders/Simple.vert; sourceTree = "<group>"; };
 		80978B3A1CBFBAD400DAC8DC /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		80978B541CBFBB3B00DAC8DC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		80978B551CBFBB3B00DAC8DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		80978B561CBFBB3B00DAC8DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80BF2DE51CBFFE30006762AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BF2DE71CBFFE36006762AD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +93,8 @@
 		80978B331CBFBA9B00DAC8DC /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				80BF2DE71CBFFE36006762AD /* main.m */,
 				80978B511CBFBB0300DAC8DC /* TouchCone_Prefix.pch */,
-				80978B0F1CBFBA4500DAC8DC /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -129,7 +130,7 @@
 		80978B4C1CBFBAE400DAC8DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				80978B0E1CBFBA4500DAC8DC /* Info.plist */,
+				80BF2DE51CBFFE30006762AD /* Info.plist */,
 				80978B4D1CBFBAF700DAC8DC /* Default.png */,
 				80978B4E1CBFBAF700DAC8DC /* Icon.png */,
 			);
@@ -179,6 +180,7 @@
 				TargetAttributes = {
 					80978B091CBFBA4500DAC8DC = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = WZ68AL5B2Z;
 					};
 				};
 			};
@@ -208,6 +210,7 @@
 				80978B501CBFBAF700DAC8DC /* Icon.png in Resources */,
 				80978B381CBFBAC500DAC8DC /* Simple.vert in Resources */,
 				80978B4F1CBFBAF700DAC8DC /* Default.png in Resources */,
+				80BF2DE61CBFFE30006762AD /* Info.plist in Resources */,
 				80978B371CBFBAC500DAC8DC /* Simple.frag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,12 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80978B101CBFBA4500DAC8DC /* main.m in Sources */,
 				80978B491CBFBAD400DAC8DC /* TouchConeAppDelegate.mm in Sources */,
 				80978B4B1CBFBAD400DAC8DC /* VboRenderingEngine2.cpp in Sources */,
 				80978B4A1CBFBAD400DAC8DC /* VboRenderingEngine1.cpp in Sources */,
 				80978B461CBFBAD400DAC8DC /* GLView.mm in Sources */,
 				80978B471CBFBAD400DAC8DC /* RenderingEngine1.cpp in Sources */,
+				80BF2DE81CBFFE36006762AD /* main.m in Sources */,
 				80978B481CBFBAD400DAC8DC /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,20 +323,24 @@
 		80978B2E1CBFBA4600DAC8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TouchCone/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		80978B2F1CBFBA4600DAC8DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TouchCone/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
