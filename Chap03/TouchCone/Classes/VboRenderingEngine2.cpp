@@ -64,10 +64,10 @@ void VboRenderingEngine2::Initialize(int width, int height)
     const float dtheta = TwoPi / coneSlices;
     const int vertexCount = coneSlices * 2 + 1;
     const int diskCenterIndex = vertexCount - 1;
-
+    
     m_bodyIndexCount = coneSlices * 3;
     m_diskIndexCount = coneSlices * 3;
-
+    
     vector<Vertex> coneVertices(vertexCount);
     vector<Vertex>::iterator vertex = coneVertices.begin();
     
@@ -127,26 +127,26 @@ void VboRenderingEngine2::Initialize(int width, int height)
                  coneIndices.size() * sizeof(coneIndices[0]),
                  &coneIndices[0],
                  GL_STATIC_DRAW);
-        
+    
     // Create the depth buffer.
     glGenRenderbuffers(1, &m_depthRenderbuffer);
     glBindRenderbuffer(GL_RENDERBUFFER, m_depthRenderbuffer);
     glRenderbufferStorage(GL_RENDERBUFFER,
-                             GL_DEPTH_COMPONENT16,
-                             width,
-                             height);
+                          GL_DEPTH_COMPONENT16,
+                          width,
+                          height);
     
     // Create the framebuffer object; attach the depth and color buffers.
     glGenFramebuffers(1, &m_framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, m_framebuffer);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER,
-                                 GL_COLOR_ATTACHMENT0,
-                                 GL_RENDERBUFFER,
-                                 m_colorRenderbuffer);
+                              GL_COLOR_ATTACHMENT0,
+                              GL_RENDERBUFFER,
+                              m_colorRenderbuffer);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER,
-                                 GL_DEPTH_ATTACHMENT,
-                                 GL_RENDERBUFFER,
-                                 m_depthRenderbuffer);
+                              GL_DEPTH_ATTACHMENT,
+                              GL_RENDERBUFFER,
+                              m_depthRenderbuffer);
     
     // Bind the color buffer for rendering.
     glBindRenderbuffer(GL_RENDERBUFFER, m_colorRenderbuffer);
@@ -167,20 +167,20 @@ void VboRenderingEngine2::Render() const
 {
     GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
     GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
-
+    
     mat4 rotation = mat4::Rotate(m_rotationAngle);
     mat4 scale = mat4::Scale(m_scale);
     mat4 translation = mat4::Translate(0, 0, -7);
     GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
     mat4 modelviewMatrix = scale * rotation * translation;
-
+    
     GLsizei stride = sizeof(Vertex);
     const GLvoid* colorOffset = (GLvoid*) sizeof(vec3);
-
+    
     glClearColor(0.5f, 0.5f, 0.5f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUniformMatrix4fv(modelviewUniform, 1, 0, modelviewMatrix.Pointer());
-
+    
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_indexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, m_vertexBuffer);
     glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, 0);
@@ -242,7 +242,7 @@ GLuint VboRenderingEngine2::BuildShader(const char* source, GLenum shaderType) c
 }
 
 GLuint VboRenderingEngine2::BuildProgram(const char* vertexShaderSource,
-                                      const char* fragmentShaderSource) const
+                                         const char* fragmentShaderSource) const
 {
     GLuint vertexShader = BuildShader(vertexShaderSource, GL_VERTEX_SHADER);
     GLuint fragmentShader = BuildShader(fragmentShaderSource, GL_FRAGMENT_SHADER);

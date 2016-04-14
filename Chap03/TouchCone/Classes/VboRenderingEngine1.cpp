@@ -58,7 +58,7 @@ void VboRenderingEngine1::Initialize(int width, int height)
     
     m_bodyIndexCount = coneSlices * 3;
     m_diskIndexCount = coneSlices * 3;
-
+    
     vector<Vertex> coneVertices(vertexCount);
     vector<Vertex>::iterator vertex = coneVertices.begin();
     
@@ -81,7 +81,7 @@ void VboRenderingEngine1::Initialize(int width, int height)
         vertex->Color = color;
         vertex++;
     }
-
+    
     // Disk center
     vertex->Position = vec3(0, 1 - coneHeight, 0);
     vertex->Color = vec4(1, 1, 1, 1);
@@ -93,7 +93,7 @@ void VboRenderingEngine1::Initialize(int width, int height)
                  coneVertices.size() * sizeof(coneVertices[0]),
                  &coneVertices[0],
                  GL_STATIC_DRAW);
-
+    
     vector<GLubyte> coneIndices(m_bodyIndexCount + m_diskIndexCount);
     vector<GLubyte>::iterator index = coneIndices.begin();
     
@@ -159,7 +159,7 @@ void VboRenderingEngine1::Render() const
     glPushMatrix();
     glRotatef(m_rotationAngle, 0, 0, 1);
     glScalef(m_scale, m_scale, m_scale);
-
+    
     const GLvoid* colorOffset = (GLvoid*) sizeof(vec3);
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_indexBuffer);
@@ -167,16 +167,16 @@ void VboRenderingEngine1::Render() const
     glVertexPointer(3, GL_FLOAT, sizeof(Vertex), 0);
     glColorPointer(4, GL_FLOAT, sizeof(Vertex), colorOffset);
     glEnableClientState(GL_VERTEX_ARRAY);
-
+    
     const GLvoid* bodyOffset = 0;
     const GLvoid* diskOffset = (GLvoid*) m_bodyIndexCount;
-
+    
     glEnableClientState(GL_COLOR_ARRAY);
     glDrawElements(GL_TRIANGLES, m_bodyIndexCount, GL_UNSIGNED_BYTE, bodyOffset);
     glDisableClientState(GL_COLOR_ARRAY);
     glColor4f(1, 1, 1, 1);
     glDrawElements(GL_TRIANGLES, m_diskIndexCount, GL_UNSIGNED_BYTE, diskOffset);
-
+    
     glDisableClientState(GL_VERTEX_ARRAY);
     glPopMatrix();
 }
@@ -195,7 +195,7 @@ void VboRenderingEngine1::OnFingerDown(ivec2 location)
 void VboRenderingEngine1::OnFingerMove(ivec2 previous, ivec2 location)
 {
     vec2 direction = vec2(location - m_pivotPoint).Normalized();
-
+    
     // Flip the Y axis because pixel coords increase towards the bottom.
     direction.y = -direction.y;
     

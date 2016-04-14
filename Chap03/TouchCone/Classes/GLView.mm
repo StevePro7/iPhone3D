@@ -15,7 +15,7 @@
     {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) self.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES2;
         m_context = [[EAGLContext alloc] initWithAPI:api];
         
@@ -38,8 +38,8 @@
         }
         
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
         
         m_renderingEngine->Initialize(CGRectGetWidth(frame), CGRectGetHeight(frame));
         
@@ -65,7 +65,7 @@
 }
 
 - (void) didRotate: (NSNotification*) notification
-{	
+{
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     m_renderingEngine->OnRotate((DeviceOrientation) orientation);
     [self drawView: nil];

@@ -58,7 +58,7 @@ void RenderingEngine1::Initialize(int width, int height)
     
     m_bodyIndexCount = coneSlices * 3;
     m_diskIndexCount = coneSlices * 3;
-
+    
     m_coneVertices.resize(vertexCount);
     vector<Vertex>::iterator vertex = m_coneVertices.begin();
     
@@ -81,7 +81,7 @@ void RenderingEngine1::Initialize(int width, int height)
         vertex->Color = color;
         vertex++;
     }
-
+    
     // Disk center
     vertex->Position = vec3(0, 1 - coneHeight, 0);
     vertex->Color = vec4(1, 1, 1, 1);
@@ -141,7 +141,7 @@ void RenderingEngine1::Render() const
     GLsizei stride = sizeof(Vertex);
     const GLvoid* pCoords = &m_coneVertices[0].Position.x;
     const GLvoid* pColors = &m_coneVertices[0].Color.x;
-
+    
     glClearColor(0.5f, 0.5f, 0.5f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glPushMatrix();
@@ -150,16 +150,16 @@ void RenderingEngine1::Render() const
     glVertexPointer(3, GL_FLOAT, stride, pCoords);
     glColorPointer(4, GL_FLOAT, stride, pColors);
     glEnableClientState(GL_VERTEX_ARRAY);
-
+    
     const GLvoid* bodyIndices = &m_coneIndices[0];
     const GLvoid* diskIndices = &m_coneIndices[m_bodyIndexCount];
-
+    
     glEnableClientState(GL_COLOR_ARRAY);
     glDrawElements(GL_TRIANGLES, m_bodyIndexCount, GL_UNSIGNED_BYTE, bodyIndices);
     glDisableClientState(GL_COLOR_ARRAY);
     glColor4f(1, 1, 1, 1);
     glDrawElements(GL_TRIANGLES, m_diskIndexCount, GL_UNSIGNED_BYTE, diskIndices);
-
+    
     glDisableClientState(GL_VERTEX_ARRAY);
     glPopMatrix();
 }
@@ -178,7 +178,7 @@ void RenderingEngine1::OnFingerDown(ivec2 location)
 void RenderingEngine1::OnFingerMove(ivec2 previous, ivec2 location)
 {
     vec2 direction = vec2(location - m_pivotPoint).Normalized();
-
+    
     // Flip the Y axis because pixel coords increase towards the bottom.
     direction.y = -direction.y;
     

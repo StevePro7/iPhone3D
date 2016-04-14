@@ -72,14 +72,10 @@
 		80978B011CBFBA4500DAC8DC = {
 			isa = PBXGroup;
 			children = (
-				80978B521CBFBB3B00DAC8DC /* CoreGraphics.framework */,
-				80978B531CBFBB3B00DAC8DC /* Foundation.framework */,
-				80978B541CBFBB3B00DAC8DC /* OpenGLES.framework */,
-				80978B551CBFBB3B00DAC8DC /* QuartzCore.framework */,
-				80978B561CBFBB3B00DAC8DC /* UIKit.framework */,
-				80978B4C1CBFBAE400DAC8DC /* Resources */,
 				80978B391CBFBACA00DAC8DC /* Classes */,
 				80978B341CBFBAB800DAC8DC /* Shaders */,
+				80D1E4241CBFD4140075F182 /* Frameworks */,
+				80978B4C1CBFBAE400DAC8DC /* Resources */,
 				80978B331CBFBA9B00DAC8DC /* Other Sources */,
 				80978B0B1CBFBA4500DAC8DC /* Products */,
 			);
@@ -138,6 +134,18 @@
 				80978B4E1CBFBAF700DAC8DC /* Icon.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		80D1E4241CBFD4140075F182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80978B551CBFBB3B00DAC8DC /* QuartzCore.framework */,
+				80978B521CBFBB3B00DAC8DC /* CoreGraphics.framework */,
+				80978B541CBFBB3B00DAC8DC /* OpenGLES.framework */,
+				80978B531CBFBB3B00DAC8DC /* Foundation.framework */,
+				80978B561CBFBB3B00DAC8DC /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -64,13 +64,13 @@ void RenderingEngine2::Initialize(int width, int height)
     const float dtheta = TwoPi / coneSlices;
     const int vertexCount = coneSlices * 2 + 1;
     const int diskCenterIndex = vertexCount - 1;
-
+    
     m_bodyIndexCount = coneSlices * 3;
     m_diskIndexCount = coneSlices * 3;
-
+    
     m_coneVertices.resize(vertexCount);
     vector<Vertex>::iterator vertex = m_coneVertices.begin();
-
+    
     // Cone's body
     for (float theta = 0; vertex != m_coneVertices.end() - 1; theta += dtheta) {
         
@@ -90,21 +90,21 @@ void RenderingEngine2::Initialize(int width, int height)
         vertex->Color = color;
         vertex++;
     }
-
+    
     // Disk center
     vertex->Position = vec3(0, 1 - coneHeight, 0);
     vertex->Color = vec4(1, 1, 1, 1);
     
     m_coneIndices.resize(m_bodyIndexCount + m_diskIndexCount);
     vector<GLubyte>::iterator index = m_coneIndices.begin();
-
+    
     // Body triangles
     for (int i = 0; i < coneSlices * 2; i += 2) {
         *index++ = i;
         *index++ = (i + 1) % (2 * coneSlices);
         *index++ = (i + 3) % (2 * coneSlices);
     }
-
+    
     // Disk triangles
     for (int i = 1; i < coneSlices * 2 + 1; i += 2) {
         *index++ = diskCenterIndex;
@@ -116,21 +116,21 @@ void RenderingEngine2::Initialize(int width, int height)
     glGenRenderbuffers(1, &m_depthRenderbuffer);
     glBindRenderbuffer(GL_RENDERBUFFER, m_depthRenderbuffer);
     glRenderbufferStorage(GL_RENDERBUFFER,
-                             GL_DEPTH_COMPONENT16,
-                             width,
-                             height);
+                          GL_DEPTH_COMPONENT16,
+                          width,
+                          height);
     
     // Create the framebuffer object; attach the depth and color buffers.
     glGenFramebuffers(1, &m_framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, m_framebuffer);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER,
-                                 GL_COLOR_ATTACHMENT0,
-                                 GL_RENDERBUFFER,
-                                 m_colorRenderbuffer);
+                              GL_COLOR_ATTACHMENT0,
+                              GL_RENDERBUFFER,
+                              m_colorRenderbuffer);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER,
-                                 GL_DEPTH_ATTACHMENT,
-                                 GL_RENDERBUFFER,
-                                 m_depthRenderbuffer);
+                              GL_DEPTH_ATTACHMENT,
+                              GL_RENDERBUFFER,
+                              m_depthRenderbuffer);
     
     // Bind the color buffer for rendering.
     glBindRenderbuffer(GL_RENDERBUFFER, m_colorRenderbuffer);
@@ -151,17 +151,17 @@ void RenderingEngine2::Render() const
 {
     GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
     GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
-
+    
     mat4 rotation = mat4::Rotate(m_rotationAngle);
     mat4 scale = mat4::Scale(m_scale);
     mat4 translation = mat4::Translate(0, 0, -7);
     GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
     mat4 modelviewMatrix = scale * rotation * translation;
-
+    
     GLsizei stride = sizeof(Vertex);
     const GLvoid* pCoords = &m_coneVertices[0].Position.x;
     const GLvoid* pColors = &m_coneVertices[0].Color.x;
-
+    
     glClearColor(0.5f, 0.5f, 0.5f, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUniformMatrix4fv(modelviewUniform, 1, 0, modelviewMatrix.Pointer());
