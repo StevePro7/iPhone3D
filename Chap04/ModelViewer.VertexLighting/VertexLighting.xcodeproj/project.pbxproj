@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806139C31CC018E000FB6739 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 806139B61CC018E000FB6739 /* AppDelegate.mm */; };
+		806139C41CC018E000FB6739 /* ApplicationEngine.ParametricViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 806139B71CC018E000FB6739 /* ApplicationEngine.ParametricViewer.cpp */; };
+		806139C51CC018E000FB6739 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 806139B91CC018E000FB6739 /* GLView.mm */; };
+		806139C61CC018E000FB6739 /* ParametricSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 806139BD1CC018E000FB6739 /* ParametricSurface.cpp */; };
+		806139C71CC018E000FB6739 /* RenderingEngine.SolidES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 806139C01CC018E000FB6739 /* RenderingEngine.SolidES1.cpp */; };
+		806139C81CC018E000FB6739 /* RenderingEngine.SolidES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 806139C11CC018E000FB6739 /* RenderingEngine.SolidES2.cpp */; };
 		80C72F301CC006F20059CB02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F2F1CC006F20059CB02 /* main.m */; };
 		80C72F331CC006FB0059CB02 /* SimpleLighting.es2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 80C72F311CC006FB0059CB02 /* SimpleLighting.es2.frag */; };
 		80C72F341CC006FB0059CB02 /* SimpleLighting.es2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 80C72F321CC006FB0059CB02 /* SimpleLighting.es2.vert */; };
-		80C72F431CC0075A0059CB02 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F361CC0075A0059CB02 /* AppDelegate.mm */; };
-		80C72F441CC0075A0059CB02 /* ApplicationEngine.ParametricViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F371CC0075A0059CB02 /* ApplicationEngine.ParametricViewer.cpp */; };
-		80C72F451CC0075A0059CB02 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F391CC0075A0059CB02 /* GLView.mm */; };
-		80C72F461CC0075A0059CB02 /* ParametricSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F3D1CC0075A0059CB02 /* ParametricSurface.cpp */; };
-		80C72F471CC0075A0059CB02 /* RenderingEngine.SolidES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F401CC0075A0059CB02 /* RenderingEngine.SolidES1.cpp */; };
-		80C72F481CC0075A0059CB02 /* RenderingEngine.SolidES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C72F411CC0075A0059CB02 /* RenderingEngine.SolidES2.cpp */; };
 		80C72F4C1CC007650059CB02 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C72F491CC007650059CB02 /* Default.png */; };
 		80C72F4D1CC007650059CB02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C72F4A1CC007650059CB02 /* Icon.png */; };
 		80C72F4E1CC007650059CB02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80C72F4B1CC007650059CB02 /* Info.plist */; };
@@ -27,24 +27,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		806139B51CC018E000FB6739 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		806139B61CC018E000FB6739 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		806139B71CC018E000FB6739 /* ApplicationEngine.ParametricViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.ParametricViewer.cpp; path = Classes/ApplicationEngine.ParametricViewer.cpp; sourceTree = "<group>"; };
+		806139B81CC018E000FB6739 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		806139B91CC018E000FB6739 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		806139BA1CC018E000FB6739 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		806139BB1CC018E000FB6739 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		806139BC1CC018E000FB6739 /* ParametricEquations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricEquations.hpp; path = Classes/ParametricEquations.hpp; sourceTree = "<group>"; };
+		806139BD1CC018E000FB6739 /* ParametricSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParametricSurface.cpp; path = Classes/ParametricSurface.cpp; sourceTree = "<group>"; };
+		806139BE1CC018E000FB6739 /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		806139BF1CC018E000FB6739 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = Classes/Quaternion.hpp; sourceTree = "<group>"; };
+		806139C01CC018E000FB6739 /* RenderingEngine.SolidES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES1.cpp; path = Classes/RenderingEngine.SolidES1.cpp; sourceTree = "<group>"; };
+		806139C11CC018E000FB6739 /* RenderingEngine.SolidES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES2.cpp; path = Classes/RenderingEngine.SolidES2.cpp; sourceTree = "<group>"; };
+		806139C21CC018E000FB6739 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
 		80C72F021CC004010059CB02 /* VertexLighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VertexLighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C72F2F1CC006F20059CB02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80C72F311CC006FB0059CB02 /* SimpleLighting.es2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleLighting.es2.frag; path = Shaders/SimpleLighting.es2.frag; sourceTree = "<group>"; };
 		80C72F321CC006FB0059CB02 /* SimpleLighting.es2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleLighting.es2.vert; path = Shaders/SimpleLighting.es2.vert; sourceTree = "<group>"; };
-		80C72F351CC0075A0059CB02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		80C72F361CC0075A0059CB02 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
-		80C72F371CC0075A0059CB02 /* ApplicationEngine.ParametricViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.ParametricViewer.cpp; path = Classes/ApplicationEngine.ParametricViewer.cpp; sourceTree = "<group>"; };
-		80C72F381CC0075A0059CB02 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
-		80C72F391CC0075A0059CB02 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
-		80C72F3A1CC0075A0059CB02 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
-		80C72F3B1CC0075A0059CB02 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
-		80C72F3C1CC0075A0059CB02 /* ParametricEquations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricEquations.hpp; path = Classes/ParametricEquations.hpp; sourceTree = "<group>"; };
-		80C72F3D1CC0075A0059CB02 /* ParametricSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParametricSurface.cpp; path = Classes/ParametricSurface.cpp; sourceTree = "<group>"; };
-		80C72F3E1CC0075A0059CB02 /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
-		80C72F3F1CC0075A0059CB02 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = Classes/Quaternion.hpp; sourceTree = "<group>"; };
-		80C72F401CC0075A0059CB02 /* RenderingEngine.SolidES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES1.cpp; path = Classes/RenderingEngine.SolidES1.cpp; sourceTree = "<group>"; };
-		80C72F411CC0075A0059CB02 /* RenderingEngine.SolidES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES2.cpp; path = Classes/RenderingEngine.SolidES2.cpp; sourceTree = "<group>"; };
-		80C72F421CC0075A0059CB02 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
 		80C72F491CC007650059CB02 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		80C72F4A1CC007650059CB02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		80C72F4B1CC007650059CB02 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,10 +74,10 @@
 		80C72EF91CC004010059CB02 = {
 			isa = PBXGroup;
 			children = (
+				80C72F2C1CC006730059CB02 /* Classes */,
 				80C72F4F1CC0076E0059CB02 /* Frameworks */,
 				80C72F2E1CC0068F0059CB02 /* Other Sources */,
 				80C72F2D1CC006870059CB02 /* Shaders */,
-				80C72F2C1CC006730059CB02 /* Classes */,
 				80C72F2B1CC006300059CB02 /* Resources */,
 				80C72F031CC004010059CB02 /* Products */,
 			);
@@ -104,20 +104,20 @@
 		80C72F2C1CC006730059CB02 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				80C72F351CC0075A0059CB02 /* AppDelegate.h */,
-				80C72F361CC0075A0059CB02 /* AppDelegate.mm */,
-				80C72F371CC0075A0059CB02 /* ApplicationEngine.ParametricViewer.cpp */,
-				80C72F381CC0075A0059CB02 /* GLView.h */,
-				80C72F391CC0075A0059CB02 /* GLView.mm */,
-				80C72F3A1CC0075A0059CB02 /* Interfaces.hpp */,
-				80C72F3B1CC0075A0059CB02 /* Matrix.hpp */,
-				80C72F3C1CC0075A0059CB02 /* ParametricEquations.hpp */,
-				80C72F3D1CC0075A0059CB02 /* ParametricSurface.cpp */,
-				80C72F3E1CC0075A0059CB02 /* ParametricSurface.hpp */,
-				80C72F3F1CC0075A0059CB02 /* Quaternion.hpp */,
-				80C72F401CC0075A0059CB02 /* RenderingEngine.SolidES1.cpp */,
-				80C72F411CC0075A0059CB02 /* RenderingEngine.SolidES2.cpp */,
-				80C72F421CC0075A0059CB02 /* Vector.hpp */,
+				806139B51CC018E000FB6739 /* AppDelegate.h */,
+				806139B61CC018E000FB6739 /* AppDelegate.mm */,
+				806139B71CC018E000FB6739 /* ApplicationEngine.ParametricViewer.cpp */,
+				806139B81CC018E000FB6739 /* GLView.h */,
+				806139B91CC018E000FB6739 /* GLView.mm */,
+				806139BA1CC018E000FB6739 /* Interfaces.hpp */,
+				806139BB1CC018E000FB6739 /* Matrix.hpp */,
+				806139BC1CC018E000FB6739 /* ParametricEquations.hpp */,
+				806139BD1CC018E000FB6739 /* ParametricSurface.cpp */,
+				806139BE1CC018E000FB6739 /* ParametricSurface.hpp */,
+				806139BF1CC018E000FB6739 /* Quaternion.hpp */,
+				806139C01CC018E000FB6739 /* RenderingEngine.SolidES1.cpp */,
+				806139C11CC018E000FB6739 /* RenderingEngine.SolidES2.cpp */,
+				806139C21CC018E000FB6739 /* Vector.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -223,13 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C72F441CC0075A0059CB02 /* ApplicationEngine.ParametricViewer.cpp in Sources */,
-				80C72F431CC0075A0059CB02 /* AppDelegate.mm in Sources */,
-				80C72F461CC0075A0059CB02 /* ParametricSurface.cpp in Sources */,
+				806139C41CC018E000FB6739 /* ApplicationEngine.ParametricViewer.cpp in Sources */,
+				806139C31CC018E000FB6739 /* AppDelegate.mm in Sources */,
+				806139C61CC018E000FB6739 /* ParametricSurface.cpp in Sources */,
 				80C72F301CC006F20059CB02 /* main.m in Sources */,
-				80C72F451CC0075A0059CB02 /* GLView.mm in Sources */,
-				80C72F471CC0075A0059CB02 /* RenderingEngine.SolidES1.cpp in Sources */,
-				80C72F481CC0075A0059CB02 /* RenderingEngine.SolidES2.cpp in Sources */,
+				806139C51CC018E000FB6739 /* GLView.mm in Sources */,
+				806139C71CC018E000FB6739 /* RenderingEngine.SolidES1.cpp in Sources */,
+				806139C81CC018E000FB6739 /* RenderingEngine.SolidES2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
