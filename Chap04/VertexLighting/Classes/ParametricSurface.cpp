@@ -36,22 +36,22 @@ void ParametricSurface::GenerateVertices(vector<float>& vertices,
         floatsPerVertex += 3;
     if (flags & VertexFlagsTexCoords)
         floatsPerVertex += 2;
-
+    
     vertices.resize(GetVertexCount() * floatsPerVertex);
     float* attribute = &vertices[0];
-
+    
     for (int j = 0; j < m_divisions.y; j++) {
         for (int i = 0; i < m_divisions.x; i++) {
-
+            
             // Compute Position
             vec2 domain = ComputeDomain(i, j);
             vec3 range = Evaluate(domain);
             attribute = range.Write(attribute);
-
+            
             // Compute Normal
             if (flags & VertexFlagsNormals) {
                 float s = i, t = j;
-
+                
                 // Nudge the point if the normal is indeterminate.
                 if (i == 0) s += 0.01f;
                 if (i == m_divisions.x - 1) s -= 0.01f;

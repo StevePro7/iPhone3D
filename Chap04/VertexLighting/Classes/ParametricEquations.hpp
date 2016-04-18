@@ -42,8 +42,8 @@ private:
 class Torus : public ParametricSurface {
 public:
     Torus(float majorRadius, float minorRadius) :
-        m_majorRadius(majorRadius),
-        m_minorRadius(minorRadius)
+    m_majorRadius(majorRadius),
+    m_minorRadius(minorRadius)
     {
         ParametricInterval interval = { ivec2(20, 20), vec2(TwoPi, TwoPi), vec2(40, 10) };
         SetInterval(interval);
@@ -86,9 +86,9 @@ public:
         
         vec3 dv;
         dv.x = -1.5f * b * sin(1.5f * u) * cos(u) -
-               (a + b * cos(1.5f * u)) * sin(u);
+        (a + b * cos(1.5f * u)) * sin(u);
         dv.y = -1.5f * b * sin(1.5f * u) * sin(u) +
-               (a + b * cos(1.5f * u)) * cos(u);
+        (a + b * cos(1.5f * u)) * cos(u);
         dv.z = 1.5f * c * cos(1.5f * u);
         
         vec3 q = dv.Normalized();
@@ -125,7 +125,7 @@ public:
         // between the major axis and the X axis.
         float x = a * cos(t) * cos(phi) - b * sin(t) * sin(phi);
         float y = a * cos(t) * sin(phi) + b * sin(t) * cos(phi);
-
+        
         // Sweep the ellipse along a circle, like a torus.
         vec3 range;
         range.x = (major + x) * cos(u);
@@ -150,12 +150,12 @@ public:
         float u = domain.y;
         
         float x0 = 3 * cos(u) * (1 + sin(u)) +
-                   (2 * (1 - cos(u) / 2)) * cos(u) * cos(v);
+        (2 * (1 - cos(u) / 2)) * cos(u) * cos(v);
         
         float y0  = 8 * sin(u) + (2 * (1 - cos(u) / 2)) * sin(u) * cos(v);
         
         float x1 = 3 * cos(u) * (1 + sin(u)) +
-                   (2 * (1 - cos(u) / 2)) * cos(v + Pi);
+        (2 * (1 - cos(u) / 2)) * cos(v + Pi);
         
         float y1 = 8 * sin(u);
         
