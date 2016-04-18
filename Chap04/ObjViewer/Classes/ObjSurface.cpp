@@ -6,9 +6,9 @@
 using namespace std;
 
 ObjSurface::ObjSurface(const string& name) :
-    m_name(name),
-    m_faceCount(0),
-    m_vertexCount(0)
+m_name(name),
+m_faceCount(0),
+m_vertexCount(0)
 {
     m_faces.resize(GetTriangleIndexCount() / 3);
     ifstream objFile(m_name.c_str());
@@ -58,12 +58,12 @@ int ObjSurface::GetTriangleIndexCount() const
 void ObjSurface::GenerateVertices(vector<float>& floats, unsigned char flags) const
 {
     assert(flags == VertexFlagsNormals && "Unsupported flags.");
-
+    
     struct Vertex {
         vec3 Position;
         vec3 Normal;
     };
-
+    
     // Read in the vertex positions and initialize lighting normals to (0, 0, 0).
     floats.resize(GetVertexCount() * 6);
     ifstream objFile(m_name.c_str());
@@ -77,23 +77,23 @@ void ObjSurface::GenerateVertices(vector<float>& floats, unsigned char flags) co
         }
         objFile.ignore(MaxLineSize, '\n');
     }
-
+    
     vertex = (Vertex*) &floats[0];
     for (size_t faceIndex = 0; faceIndex < m_faces.size(); ++faceIndex) {
         ivec3 face = m_faces[faceIndex];
-
+        
         // Compute the facet normal.
         vec3 a = vertex[face.x].Position;
         vec3 b = vertex[face.y].Position;
         vec3 c = vertex[face.z].Position;
         vec3 facetNormal = (b - a).Cross(c - a);
-
+        
         // Add the facet normal to the lighting normal of each adjoining vertex.
         vertex[face.x].Normal += facetNormal;
         vertex[face.y].Normal += facetNormal;
         vertex[face.z].Normal += facetNormal;
     }
-
+    
     // Normalize the normals.
     for (int v = 0; v < GetVertexCount(); ++v)
         vertex[v].Normal.Normalize();

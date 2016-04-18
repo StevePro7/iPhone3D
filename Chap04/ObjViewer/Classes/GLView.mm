@@ -15,7 +15,7 @@
     {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) self.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES2;
         m_context = [[EAGLContext alloc] initWithAPI:api];
         
@@ -30,7 +30,7 @@
         }
         
         m_resourceManager = Darwin::CreateResourceManager();
-
+        
         if (api == kEAGLRenderingAPIOpenGLES1) {
             NSLog(@"Using OpenGL ES 1.1");
             m_renderingEngine = SolidES1::CreateRenderingEngine();
@@ -38,13 +38,13 @@
             NSLog(@"Using OpenGL ES 2.0");
             m_renderingEngine = SolidES2::CreateRenderingEngine();
         }
-
-       m_applicationEngine = ObjViewer::CreateApplicationEngine(m_renderingEngine, m_resourceManager);
-
+        
+        m_applicationEngine = ObjViewer::CreateApplicationEngine(m_renderingEngine, m_resourceManager);
+        
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
-                
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
+        
         int width = CGRectGetWidth(frame);
         int height = CGRectGetHeight(frame);
         m_applicationEngine->Initialize(width, height);
@@ -54,10 +54,10 @@
         
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
+                          forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
