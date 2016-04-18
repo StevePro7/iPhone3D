@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8020B5A61CC501BD002C1FFB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8020B5A31CC501BD002C1FFB /* Default.png */; };
+		8020B5A71CC501BD002C1FFB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8020B5A41CC501BD002C1FFB /* Icon.png */; };
+		8020B5A81CC501BD002C1FFB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8020B5A51CC501BD002C1FFB /* Info.plist */; };
+		8020B5AA1CC501C4002C1FFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5A91CC501C4002C1FFB /* main.m */; };
+		8020B5B81CC501CA002C1FFB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5AC1CC501CA002C1FFB /* AppDelegate.mm */; };
+		8020B5B91CC501CA002C1FFB /* ApplicationEngine.ParametricViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5AD1CC501CA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */; };
+		8020B5BA1CC501CA002C1FFB /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5AF1CC501CA002C1FFB /* GLView.mm */; };
+		8020B5BB1CC501CA002C1FFB /* ParametricSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5B31CC501CA002C1FFB /* ParametricSurface.cpp */; };
+		8020B5BC1CC501CA002C1FFB /* RenderingEngine.SolidES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5B61CC501CA002C1FFB /* RenderingEngine.SolidES2.cpp */; };
+		8020B5BF1CC501D0002C1FFB /* PixelLighting.es2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 8020B5BD1CC501D0002C1FFB /* PixelLighting.es2.frag */; };
+		8020B5C01CC501D0002C1FFB /* PixelLighting.es2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 8020B5BE1CC501D0002C1FFB /* PixelLighting.es2.vert */; };
+		8020B5C21CC501E1002C1FFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B5C11CC501E1002C1FFB /* Foundation.framework */; };
+		8020B5C41CC501E9002C1FFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B5C31CC501E9002C1FFB /* QuartzCore.framework */; };
+		8020B5C61CC501EE002C1FFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B5C51CC501EE002C1FFB /* CoreGraphics.framework */; };
+		8020B5C81CC501F6002C1FFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B5C71CC501F6002C1FFB /* UIKit.framework */; };
+		8020B5CA1CC5020B002C1FFB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B5C91CC5020B002C1FFB /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8020B5A31CC501BD002C1FFB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8020B5A41CC501BD002C1FFB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8020B5A51CC501BD002C1FFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8020B5A91CC501C4002C1FFB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8020B5AB1CC501CA002C1FFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		8020B5AC1CC501CA002C1FFB /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		8020B5AD1CC501CA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.ParametricViewer.cpp; path = Classes/ApplicationEngine.ParametricViewer.cpp; sourceTree = "<group>"; };
+		8020B5AE1CC501CA002C1FFB /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		8020B5AF1CC501CA002C1FFB /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		8020B5B01CC501CA002C1FFB /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		8020B5B11CC501CA002C1FFB /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		8020B5B21CC501CA002C1FFB /* ParametricEquations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricEquations.hpp; path = Classes/ParametricEquations.hpp; sourceTree = "<group>"; };
+		8020B5B31CC501CA002C1FFB /* ParametricSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParametricSurface.cpp; path = Classes/ParametricSurface.cpp; sourceTree = "<group>"; };
+		8020B5B41CC501CA002C1FFB /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		8020B5B51CC501CA002C1FFB /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = Classes/Quaternion.hpp; sourceTree = "<group>"; };
+		8020B5B61CC501CA002C1FFB /* RenderingEngine.SolidES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES2.cpp; path = Classes/RenderingEngine.SolidES2.cpp; sourceTree = "<group>"; };
+		8020B5B71CC501CA002C1FFB /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		8020B5BD1CC501D0002C1FFB /* PixelLighting.es2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = PixelLighting.es2.frag; path = Shaders/PixelLighting.es2.frag; sourceTree = "<group>"; };
+		8020B5BE1CC501D0002C1FFB /* PixelLighting.es2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = PixelLighting.es2.vert; path = Shaders/PixelLighting.es2.vert; sourceTree = "<group>"; };
+		8020B5C11CC501E1002C1FFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8020B5C31CC501E9002C1FFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8020B5C51CC501EE002C1FFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8020B5C71CC501F6002C1FFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8020B5C91CC5020B002C1FFB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80599A2B1CC5013B003D87E3 /* PixelLighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelLighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80599A281CC5013B003D87E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B5CA1CC5020B002C1FFB /* OpenGLES.framework in Frameworks */,
+				8020B5C81CC501F6002C1FFB /* UIKit.framework in Frameworks */,
+				8020B5C61CC501EE002C1FFB /* CoreGraphics.framework in Frameworks */,
+				8020B5C41CC501E9002C1FFB /* QuartzCore.framework in Frameworks */,
+				8020B5C21CC501E1002C1FFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8020B59E1CC50184002C1FFB /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5BD1CC501D0002C1FFB /* PixelLighting.es2.frag */,
+				8020B5BE1CC501D0002C1FFB /* PixelLighting.es2.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		8020B59F1CC50191002C1FFB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5AB1CC501CA002C1FFB /* AppDelegate.h */,
+				8020B5AC1CC501CA002C1FFB /* AppDelegate.mm */,
+				8020B5AD1CC501CA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */,
+				8020B5AE1CC501CA002C1FFB /* GLView.h */,
+				8020B5AF1CC501CA002C1FFB /* GLView.mm */,
+				8020B5B01CC501CA002C1FFB /* Interfaces.hpp */,
+				8020B5B11CC501CA002C1FFB /* Matrix.hpp */,
+				8020B5B21CC501CA002C1FFB /* ParametricEquations.hpp */,
+				8020B5B31CC501CA002C1FFB /* ParametricSurface.cpp */,
+				8020B5B41CC501CA002C1FFB /* ParametricSurface.hpp */,
+				8020B5B51CC501CA002C1FFB /* Quaternion.hpp */,
+				8020B5B61CC501CA002C1FFB /* RenderingEngine.SolidES2.cpp */,
+				8020B5B71CC501CA002C1FFB /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8020B5A01CC50198002C1FFB /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5A91CC501C4002C1FFB /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8020B5A11CC5019D002C1FFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5A31CC501BD002C1FFB /* Default.png */,
+				8020B5A41CC501BD002C1FFB /* Icon.png */,
+				8020B5A51CC501BD002C1FFB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8020B5A21CC501A4002C1FFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5C91CC5020B002C1FFB /* OpenGLES.framework */,
+				8020B5C71CC501F6002C1FFB /* UIKit.framework */,
+				8020B5C51CC501EE002C1FFB /* CoreGraphics.framework */,
+				8020B5C31CC501E9002C1FFB /* QuartzCore.framework */,
+				8020B5C11CC501E1002C1FFB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80599A221CC5013B003D87E3 = {
+			isa = PBXGroup;
+			children = (
+				8020B5A21CC501A4002C1FFB /* Frameworks */,
+				8020B5A11CC5019D002C1FFB /* Resources */,
+				8020B5A01CC50198002C1FFB /* Other Sources */,
+				8020B59F1CC50191002C1FFB /* Classes */,
+				8020B59E1CC50184002C1FFB /* Shaders */,
+				80599A2C1CC5013B003D87E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80599A2C1CC5013B003D87E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80599A2B1CC5013B003D87E3 /* PixelLighting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80599A2A1CC5013B003D87E3 /* PixelLighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80599A4E1CC5013B003D87E3 /* Build configuration list for PBXNativeTarget "PixelLighting" */;
+			buildPhases = (
+				80599A271CC5013B003D87E3 /* Sources */,
+				80599A281CC5013B003D87E3 /* Frameworks */,
+				80599A291CC5013B003D87E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelLighting;
+			productName = PixelLighting;
+			productReference = 80599A2B1CC5013B003D87E3 /* PixelLighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80599A231CC5013B003D87E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					80599A2A1CC5013B003D87E3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 80599A261CC5013B003D87E3 /* Build configuration list for PBXProject "PixelLighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80599A221CC5013B003D87E3;
+			productRefGroup = 80599A2C1CC5013B003D87E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80599A2A1CC5013B003D87E3 /* PixelLighting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80599A291CC5013B003D87E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B5BF1CC501D0002C1FFB /* PixelLighting.es2.frag in Resources */,
+				8020B5A71CC501BD002C1FFB /* Icon.png in Resources */,
+				8020B5C01CC501D0002C1FFB /* PixelLighting.es2.vert in Resources */,
+				8020B5A61CC501BD002C1FFB /* Default.png in Resources */,
+				8020B5A81CC501BD002C1FFB /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80599A271CC5013B003D87E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B5B91CC501CA002C1FFB /* ApplicationEngine.ParametricViewer.cpp in Sources */,
+				8020B5B81CC501CA002C1FFB /* AppDelegate.mm in Sources */,
+				8020B5BC1CC501CA002C1FFB /* RenderingEngine.SolidES2.cpp in Sources */,
+				8020B5BB1CC501CA002C1FFB /* ParametricSurface.cpp in Sources */,
+				8020B5AA1CC501C4002C1FFB /* main.m in Sources */,
+				8020B5BA1CC501CA002C1FFB /* GLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80599A4C1CC5013B003D87E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80599A4D1CC5013B003D87E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80599A4F1CC5013B003D87E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80599A501CC5013B003D87E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80599A261CC5013B003D87E3 /* Build configuration list for PBXProject "PixelLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80599A4C1CC5013B003D87E3 /* Debug */,
+				80599A4D1CC5013B003D87E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80599A4E1CC5013B003D87E3 /* Build configuration list for PBXNativeTarget "PixelLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80599A4F1CC5013B003D87E3 /* Debug */,
+				80599A501CC5013B003D87E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80599A231CC5013B003D87E3 /* Project object */;
+}
