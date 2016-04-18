@@ -23,5 +23,5 @@ private:
     ivec2 m_slices;
     ivec2 m_divisions;
     vec2 m_upperBound;
-	vec2 m_textureCount;
+    vec2 m_textureCount;
 };
