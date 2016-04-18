@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8020B5DA1CC50296002C1FFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5D91CC50296002C1FFB /* main.m */; };
+		8020B60B1CC502DA002C1FFB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8020B5FF1CC502DA002C1FFB /* AppDelegate.mm */; };
+		8020B60C1CC502DA002C1FFB /* ApplicationEngine.ParametricViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B6001CC502DA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */; };
+		8020B60D1CC502DA002C1FFB /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8020B6021CC502DA002C1FFB /* GLView.mm */; };
+		8020B60E1CC502DA002C1FFB /* ParametricSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B6061CC502DA002C1FFB /* ParametricSurface.cpp */; };
+		8020B60F1CC502DA002C1FFB /* RenderingEngine.SolidES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8020B6091CC502DA002C1FFB /* RenderingEngine.SolidES2.cpp */; };
+		8020B6131CC502E6002C1FFB /* ToonLighting.es2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 8020B6111CC502E6002C1FFB /* ToonLighting.es2.frag */; };
+		8020B6141CC502E6002C1FFB /* ToonLighting.es2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 8020B6121CC502E6002C1FFB /* ToonLighting.es2.vert */; };
+		8020B6181CC502FB002C1FFB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8020B6161CC502FB002C1FFB /* Default.png */; };
+		8020B6191CC502FB002C1FFB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8020B6171CC502FB002C1FFB /* Icon.png */; };
+		8020B61D1CC50327002C1FFB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B61C1CC50327002C1FFB /* OpenGLES.framework */; };
+		8020B61F1CC5032C002C1FFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B61E1CC5032C002C1FFB /* UIKit.framework */; };
+		8020B6211CC50333002C1FFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B6201CC50333002C1FFB /* CoreGraphics.framework */; };
+		8020B6231CC50338002C1FFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B6221CC50338002C1FFB /* Foundation.framework */; };
+		8020B6251CC5033F002C1FFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020B6241CC5033F002C1FFB /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8020B5D41CC50296002C1FFB /* ToonLighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToonLighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8020B5D81CC50296002C1FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ToonLighting/Info.plist; sourceTree = "<group>"; };
+		8020B5D91CC50296002C1FFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ToonLighting/main.m; sourceTree = "<group>"; };
+		8020B5FE1CC502DA002C1FFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		8020B5FF1CC502DA002C1FFB /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		8020B6001CC502DA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.ParametricViewer.cpp; path = Classes/ApplicationEngine.ParametricViewer.cpp; sourceTree = "<group>"; };
+		8020B6011CC502DA002C1FFB /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		8020B6021CC502DA002C1FFB /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		8020B6031CC502DA002C1FFB /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		8020B6041CC502DA002C1FFB /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		8020B6051CC502DA002C1FFB /* ParametricEquations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricEquations.hpp; path = Classes/ParametricEquations.hpp; sourceTree = "<group>"; };
+		8020B6061CC502DA002C1FFB /* ParametricSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParametricSurface.cpp; path = Classes/ParametricSurface.cpp; sourceTree = "<group>"; };
+		8020B6071CC502DA002C1FFB /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		8020B6081CC502DA002C1FFB /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = Classes/Quaternion.hpp; sourceTree = "<group>"; };
+		8020B6091CC502DA002C1FFB /* RenderingEngine.SolidES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.SolidES2.cpp; path = Classes/RenderingEngine.SolidES2.cpp; sourceTree = "<group>"; };
+		8020B60A1CC502DA002C1FFB /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		8020B6111CC502E6002C1FFB /* ToonLighting.es2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ToonLighting.es2.frag; path = Shaders/ToonLighting.es2.frag; sourceTree = "<group>"; };
+		8020B6121CC502E6002C1FFB /* ToonLighting.es2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ToonLighting.es2.vert; path = Shaders/ToonLighting.es2.vert; sourceTree = "<group>"; };
+		8020B6161CC502FB002C1FFB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8020B6171CC502FB002C1FFB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8020B61C1CC50327002C1FFB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8020B61E1CC5032C002C1FFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8020B6201CC50333002C1FFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8020B6221CC50338002C1FFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8020B6241CC5033F002C1FFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8020B5D11CC50296002C1FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B6251CC5033F002C1FFB /* QuartzCore.framework in Frameworks */,
+				8020B6231CC50338002C1FFB /* Foundation.framework in Frameworks */,
+				8020B6211CC50333002C1FFB /* CoreGraphics.framework in Frameworks */,
+				8020B61F1CC5032C002C1FFB /* UIKit.framework in Frameworks */,
+				8020B61D1CC50327002C1FFB /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8020B5CB1CC50296002C1FFB = {
+			isa = PBXGroup;
+			children = (
+				8020B61B1CC50316002C1FFB /* Frameworks */,
+				8020B61A1CC50305002C1FFB /* Other Sources */,
+				8020B6151CC502E9002C1FFB /* Resources */,
+				8020B6101CC502DE002C1FFB /* Shaders */,
+				8020B5FD1CC502D0002C1FFB /* Classes */,
+				8020B5D51CC50296002C1FFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8020B5D51CC50296002C1FFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5D41CC50296002C1FFB /* ToonLighting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8020B5FD1CC502D0002C1FFB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5FE1CC502DA002C1FFB /* AppDelegate.h */,
+				8020B5FF1CC502DA002C1FFB /* AppDelegate.mm */,
+				8020B6001CC502DA002C1FFB /* ApplicationEngine.ParametricViewer.cpp */,
+				8020B6011CC502DA002C1FFB /* GLView.h */,
+				8020B6021CC502DA002C1FFB /* GLView.mm */,
+				8020B6031CC502DA002C1FFB /* Interfaces.hpp */,
+				8020B6041CC502DA002C1FFB /* Matrix.hpp */,
+				8020B6051CC502DA002C1FFB /* ParametricEquations.hpp */,
+				8020B6061CC502DA002C1FFB /* ParametricSurface.cpp */,
+				8020B6071CC502DA002C1FFB /* ParametricSurface.hpp */,
+				8020B6081CC502DA002C1FFB /* Quaternion.hpp */,
+				8020B6091CC502DA002C1FFB /* RenderingEngine.SolidES2.cpp */,
+				8020B60A1CC502DA002C1FFB /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8020B6101CC502DE002C1FFB /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8020B6111CC502E6002C1FFB /* ToonLighting.es2.frag */,
+				8020B6121CC502E6002C1FFB /* ToonLighting.es2.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		8020B6151CC502E9002C1FFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5D81CC50296002C1FFB /* Info.plist */,
+				8020B6161CC502FB002C1FFB /* Default.png */,
+				8020B6171CC502FB002C1FFB /* Icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8020B61A1CC50305002C1FFB /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8020B5D91CC50296002C1FFB /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8020B61B1CC50316002C1FFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8020B6241CC5033F002C1FFB /* QuartzCore.framework */,
+				8020B6221CC50338002C1FFB /* Foundation.framework */,
+				8020B6201CC50333002C1FFB /* CoreGraphics.framework */,
+				8020B61E1CC5032C002C1FFB /* UIKit.framework */,
+				8020B61C1CC50327002C1FFB /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8020B5D31CC50296002C1FFB /* ToonLighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8020B5F71CC50296002C1FFB /* Build configuration list for PBXNativeTarget "ToonLighting" */;
+			buildPhases = (
+				8020B5D01CC50296002C1FFB /* Sources */,
+				8020B5D11CC50296002C1FFB /* Frameworks */,
+				8020B5D21CC50296002C1FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToonLighting;
+			productName = ToonLighting;
+			productReference = 8020B5D41CC50296002C1FFB /* ToonLighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8020B5CC1CC50296002C1FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					8020B5D31CC50296002C1FFB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 8020B5CF1CC50296002C1FFB /* Build configuration list for PBXProject "ToonLighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8020B5CB1CC50296002C1FFB;
+			productRefGroup = 8020B5D51CC50296002C1FFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8020B5D31CC50296002C1FFB /* ToonLighting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8020B5D21CC50296002C1FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B6191CC502FB002C1FFB /* Icon.png in Resources */,
+				8020B6141CC502E6002C1FFB /* ToonLighting.es2.vert in Resources */,
+				8020B6181CC502FB002C1FFB /* Default.png in Resources */,
+				8020B6131CC502E6002C1FFB /* ToonLighting.es2.frag in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8020B5D01CC50296002C1FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020B60C1CC502DA002C1FFB /* ApplicationEngine.ParametricViewer.cpp in Sources */,
+				8020B60B1CC502DA002C1FFB /* AppDelegate.mm in Sources */,
+				8020B60F1CC502DA002C1FFB /* RenderingEngine.SolidES2.cpp in Sources */,
+				8020B60E1CC502DA002C1FFB /* ParametricSurface.cpp in Sources */,
+				8020B5DA1CC50296002C1FFB /* main.m in Sources */,
+				8020B60D1CC502DA002C1FFB /* GLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8020B5F51CC50296002C1FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8020B5F61CC50296002C1FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8020B5F81CC50296002C1FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = ToonLighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8020B5F91CC50296002C1FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = ToonLighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8020B5CF1CC50296002C1FFB /* Build configuration list for PBXProject "ToonLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8020B5F51CC50296002C1FFB /* Debug */,
+				8020B5F61CC50296002C1FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8020B5F71CC50296002C1FFB /* Build configuration list for PBXNativeTarget "ToonLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8020B5F81CC50296002C1FFB /* Debug */,
+				8020B5F91CC50296002C1FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8020B5CC1CC50296002C1FFB /* Project object */;
+}
