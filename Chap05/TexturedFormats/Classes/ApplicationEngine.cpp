@@ -12,7 +12,7 @@ const string TextureFiles[] = {
     "Rgb8.png",
     "Rgba8.png",
     "LetterA.png",
-    "Astronomy.pvr", 
+    "Astronomy.pvr",
     "Utopia.png",
     "Utopia.pvr",
 };
@@ -35,15 +35,15 @@ private:
     int m_textureIndex;
     float m_timer;
 };
-    
+
 IApplicationEngine* CreateApplicationEngine(IRenderingEngine* renderingEngine)
 {
     return new ApplicationEngine(renderingEngine);
 }
 
 ApplicationEngine::ApplicationEngine(IRenderingEngine* renderingEngine) :
-    m_renderingEngine(renderingEngine),
-    m_timer(0)
+m_renderingEngine(renderingEngine),
+m_timer(0)
 {
 }
 
@@ -56,7 +56,7 @@ void ApplicationEngine::Initialize(int width, int height)
 {
     m_screenSize = ivec2(width, height);
     m_centerPoint = m_screenSize / 2;
-
+    
     vector<ISurface*> surfaces(1);
     surfaces[0] = new Quad(2, 2);
     m_renderingEngine->Initialize(surfaces);
