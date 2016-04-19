@@ -25,16 +25,16 @@ private:
     Quaternion m_previousOrientation;
     IRenderingEngine* m_renderingEngine;
 };
-    
+
 IApplicationEngine* CreateApplicationEngine(IRenderingEngine* renderingEngine)
 {
     return new ApplicationEngine(renderingEngine);
 }
 
 ApplicationEngine::ApplicationEngine(IRenderingEngine* renderingEngine) :
-    m_spinning(false),
-    m_animating(true),
-    m_renderingEngine(renderingEngine)
+m_spinning(false),
+m_animating(true),
+m_renderingEngine(renderingEngine)
 {
     m_orientation = Quaternion::CreateFromVectors(vec3(-1, 0, 0), vec3(0.1, 0, 1));
     m_orientation.Normalize();
@@ -50,7 +50,7 @@ void ApplicationEngine::Initialize(int width, int height)
     m_trackballRadius = width / 3;
     m_screenSize = ivec2(width, height);
     m_centerPoint = m_screenSize / 2;
-
+    
     vector<ISurface*> surfaces(1);
     surfaces[0] = new TrefoilKnot(2);
     m_renderingEngine->Initialize(surfaces);

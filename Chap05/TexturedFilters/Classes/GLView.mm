@@ -40,7 +40,8 @@
         }
         
         m_applicationEngine = CreateApplicationEngine(m_renderingEngine);
-
+        m_applicationEngine = CreateApplicationEngine(m_renderingEngine);
+        
         [m_context
             renderbufferStorage:GL_RENDERBUFFER
             fromDrawable: eaglLayer];
