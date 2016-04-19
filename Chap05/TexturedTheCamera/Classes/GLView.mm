@@ -18,7 +18,7 @@
     {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) self.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES1;
         m_context = [[EAGLContext alloc] initWithAPI:api];
         
@@ -28,13 +28,13 @@
         }
         
         m_resourceManager = CreateResourceManager();
-
+        
         NSLog(@"Using OpenGL ES 1.1");
         m_renderingEngine = CreateRenderingEngine(m_resourceManager);
         
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
         
         m_renderingEngine->Initialize();
         m_renderingEngine->Render(m_zScale, m_xRotation, true);
@@ -42,10 +42,10 @@
         
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
+                          forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
@@ -78,21 +78,21 @@
     CGPoint location  = [touch locationInView: self];
     
     // Return early if touched outside the button's area.
-    if (location.y < 395 || location.y > 450 || 
+    if (location.y < 395 || location.y > 450 ||
         location.x < 75 || location.x > 245)
         return;
-
+    
     // Instance the image picker and set up its configuration.
     UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
     imagePicker.navigationBarHidden = YES;
     imagePicker.toolbarHidden = YES;
-
+    
     // Enable camera mode if supported, otherwise fall back to the default.
     UIImagePickerControllerSourceType source = UIImagePickerControllerSourceTypeCamera;
     if ([UIImagePickerController isSourceTypeAvailable:source])
-        imagePicker.sourceType = source;  
-
+        imagePicker.sourceType = source;
+    
     // Instance the view controller if it doesn't already exist.
     if (m_viewController == 0) {
         m_viewController = [[UIViewController alloc] init];
@@ -121,7 +121,7 @@
         case UIImageOrientationLeft: theta = M_PI / 2; break;
         case UIImageOrientationRight: theta = -M_PI / 2; break;
     }
-
+    
     int bpp = 4;
     ivec2 size(256, 256);
     int byteCount = size.x * size.y * bpp;

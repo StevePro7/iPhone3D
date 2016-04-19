@@ -3,7 +3,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface GLView : UIView <UIImagePickerControllerDelegate,
-                            UINavigationControllerDelegate> {
+UINavigationControllerDelegate> {
 @private
     IRenderingEngine* m_renderingEngine;
     IResourceManager* m_resourceManager;

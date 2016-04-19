@@ -56,7 +56,7 @@ public:
     {
         m_imageData = 0;
     }
-
+    
 private:
     NSData* m_imageData;
     unsigned int NextPot(unsigned int n)

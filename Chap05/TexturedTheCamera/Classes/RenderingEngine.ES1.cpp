@@ -33,7 +33,7 @@ private:
     GLuint m_actionTexture;
     IResourceManager* m_resourceManager;
 };
-    
+
 IRenderingEngine* CreateRenderingEngine(IResourceManager* resourceManager)
 {
     return new RenderingEngine(resourceManager);
@@ -56,7 +56,7 @@ void RenderingEngine::Initialize()
     m_cameraTexture = CreateTexture("Tarsier.png");
     m_waitTexture = CreateTexture("PleaseWait.png");
     m_actionTexture = CreateTexture("TakePicture.png");
-
+    
     // Extract width and height from the color buffer.
     int width, height;
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES,
@@ -64,12 +64,12 @@ void RenderingEngine::Initialize()
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES,
                                     GL_RENDERBUFFER_HEIGHT_OES, &height);
     glViewport(0, 0, width, height);
-
+    
     // Create a depth buffer that has the same size as the color buffer.
     glGenRenderbuffersOES(1, &m_depthRenderbuffer);
     glBindRenderbufferOES(GL_RENDERBUFFER_OES, m_depthRenderbuffer);
     glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, width, height);
-        
+    
     // Create the framebuffer object.
     GLuint framebuffer;
     glGenFramebuffersOES(1, &framebuffer);
@@ -87,7 +87,7 @@ void RenderingEngine::Initialize()
     glEnable(GL_LIGHT0);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_DEPTH_TEST);
-
+    
     // Set up the material properties.
     vec4 diffuse(1, 1, 1, 1);
     glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, diffuse.Pointer());
@@ -129,7 +129,7 @@ void RenderingEngine::Render(float zScale, float theta, bool waiting) const
     glEnable(GL_LIGHTING);
     RenderDrawable(m_sphere);
     glDisable(GL_LIGHTING);
-
+    
     glPopMatrix();
 }
 
