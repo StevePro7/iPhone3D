@@ -15,7 +15,7 @@ public:
     void UpdateAnimation(float dt);
 private:
     float m_objectTheta;
-    float m_fboTheta; 
+    float m_fboTheta;
     float m_timestamp;
     int m_dragStart;
     int m_dragEnd;
@@ -23,18 +23,18 @@ private:
     float m_fboTransition;
     IRenderingEngine* m_renderingEngine;
 };
-    
+
 IApplicationEngine* CreateApplicationEngine(IRenderingEngine* renderingEngine)
 {
     return new ApplicationEngine(renderingEngine);
 }
 
 ApplicationEngine::ApplicationEngine(IRenderingEngine* renderingEngine) :
-    m_renderingEngine(renderingEngine),
-    m_dragging(false),
-    m_fboTransition(0),
-    m_timestamp(0.5f),
-    m_fboTheta(0)
+m_renderingEngine(renderingEngine),
+m_dragging(false),
+m_fboTransition(0),
+m_timestamp(0.5f),
+m_fboTheta(0)
 {
 }
 
@@ -55,7 +55,7 @@ void ApplicationEngine::Render() const
         objectTheta += m_dragEnd - m_dragStart;
     
     float fboTheta = m_fboTheta - m_fboTransition;
-
+    
     // Normalize the angle between 0 and 360.
     int integer = (int) fboTheta;
     float fractional = fboTheta - integer;
@@ -76,7 +76,7 @@ void ApplicationEngine::UpdateAnimation(float dt)
         if (m_fboTransition < 0)
             m_fboTransition = 0;
     }
-
+    
     // Start a new FBO transition every four seconds.
     m_timestamp += dt;
     if (m_timestamp > 4 && m_fboTransition == 0) {
@@ -96,7 +96,7 @@ void ApplicationEngine::OnFingerUp(ivec2 location)
 void ApplicationEngine::OnFingerDown(ivec2 location)
 {
     if (!m_dragging) {
-        m_dragging = true;  
+        m_dragging = true;
         m_dragStart = m_dragEnd = location.x;
     }
 }
