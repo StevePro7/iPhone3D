@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80AF36601CC77AC7004E9E14 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80AF36561CC77AC7004E9E14 /* AppDelegate.mm */; };
+		80AF36611CC77AC7004E9E14 /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80AF36571CC77AC7004E9E14 /* ApplicationEngine.cpp */; };
+		80AF36621CC77AC7004E9E14 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80AF36591CC77AC7004E9E14 /* GLView.mm */; };
+		80AF36631CC77AC7004E9E14 /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80AF365D1CC77AC7004E9E14 /* RenderingEngine.ES1.cpp */; };
+		80AF36641CC77AC7004E9E14 /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80AF365E1CC77AC7004E9E14 /* ResourceManager.mm */; };
+		80AF366B1CC77AEA004E9E14 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80AF36681CC77AEA004E9E14 /* Default.png */; };
+		80AF366C1CC77AEA004E9E14 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80AF36691CC77AEA004E9E14 /* Icon.png */; };
+		80AF366D1CC77AEA004E9E14 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80AF366A1CC77AEA004E9E14 /* Info.plist */; };
+		80AF366F1CC77B07004E9E14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AF366E1CC77B07004E9E14 /* main.m */; };
+		80AF36711CC77B10004E9E14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF36701CC77B10004E9E14 /* QuartzCore.framework */; };
+		80AF36731CC77B15004E9E14 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF36721CC77B15004E9E14 /* OpenGLES.framework */; };
+		80AF36751CC77B1B004E9E14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF36741CC77B1B004E9E14 /* UIKit.framework */; };
+		80AF36771CC77B22004E9E14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF36761CC77B22004E9E14 /* Foundation.framework */; };
+		80AF36791CC77B28004E9E14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF36781CC77B28004E9E14 /* CoreGraphics.framework */; };
+		80AF367F1CC77B4D004E9E14 /* Grille.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80AF367B1CC77B4D004E9E14 /* Grille.pvr */; };
+		80AF36801CC77B4D004E9E14 /* Marble.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80AF367C1CC77B4D004E9E14 /* Marble.pvr */; };
+		80AF36811CC77B4D004E9E14 /* Rhino565.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80AF367D1CC77B4D004E9E14 /* Rhino565.pvr */; };
+		80AF36821CC77B4D004E9E14 /* Tiger565.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80AF367E1CC77B4D004E9E14 /* Tiger565.pvr */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80AF362B1CC77A92004E9E14 /* Trefoil2FakeStencil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trefoil2FakeStencil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AF36551CC77AC7004E9E14 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		80AF36561CC77AC7004E9E14 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		80AF36571CC77AC7004E9E14 /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.cpp; path = Classes/ApplicationEngine.cpp; sourceTree = "<group>"; };
+		80AF36581CC77AC7004E9E14 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		80AF36591CC77AC7004E9E14 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		80AF365A1CC77AC7004E9E14 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		80AF365B1CC77AC7004E9E14 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		80AF365C1CC77AC7004E9E14 /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		80AF365D1CC77AC7004E9E14 /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES1.cpp; path = Classes/RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		80AF365E1CC77AC7004E9E14 /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourceManager.mm; path = Classes/ResourceManager.mm; sourceTree = "<group>"; };
+		80AF365F1CC77AC7004E9E14 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		80AF36681CC77AEA004E9E14 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80AF36691CC77AEA004E9E14 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		80AF366A1CC77AEA004E9E14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80AF366E1CC77B07004E9E14 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80AF36701CC77B10004E9E14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80AF36721CC77B15004E9E14 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80AF36741CC77B1B004E9E14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80AF36761CC77B22004E9E14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80AF36781CC77B28004E9E14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80AF367B1CC77B4D004E9E14 /* Grille.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Grille.pvr; path = Textures/Grille.pvr; sourceTree = "<group>"; };
+		80AF367C1CC77B4D004E9E14 /* Marble.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Marble.pvr; path = Textures/Marble.pvr; sourceTree = "<group>"; };
+		80AF367D1CC77B4D004E9E14 /* Rhino565.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rhino565.pvr; path = Textures/Rhino565.pvr; sourceTree = "<group>"; };
+		80AF367E1CC77B4D004E9E14 /* Tiger565.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tiger565.pvr; path = Textures/Tiger565.pvr; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80AF36281CC77A92004E9E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AF36791CC77B28004E9E14 /* CoreGraphics.framework in Frameworks */,
+				80AF36771CC77B22004E9E14 /* Foundation.framework in Frameworks */,
+				80AF36751CC77B1B004E9E14 /* UIKit.framework in Frameworks */,
+				80AF36731CC77B15004E9E14 /* OpenGLES.framework in Frameworks */,
+				80AF36711CC77B10004E9E14 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80AF36221CC77A92004E9E14 = {
+			isa = PBXGroup;
+			children = (
+				80AF367A1CC77B45004E9E14 /* Textures */,
+				80AF36671CC77ADA004E9E14 /* Other Sources */,
+				80AF36661CC77AD4004E9E14 /* Resources */,
+				80AF36651CC77ACA004E9E14 /* Frameworks */,
+				80AF36541CC77ABC004E9E14 /* Classes */,
+				80AF362C1CC77A92004E9E14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80AF362C1CC77A92004E9E14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80AF362B1CC77A92004E9E14 /* Trefoil2FakeStencil.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80AF36541CC77ABC004E9E14 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80AF36551CC77AC7004E9E14 /* AppDelegate.h */,
+				80AF36561CC77AC7004E9E14 /* AppDelegate.mm */,
+				80AF36571CC77AC7004E9E14 /* ApplicationEngine.cpp */,
+				80AF36581CC77AC7004E9E14 /* GLView.h */,
+				80AF36591CC77AC7004E9E14 /* GLView.mm */,
+				80AF365A1CC77AC7004E9E14 /* Interfaces.hpp */,
+				80AF365B1CC77AC7004E9E14 /* Matrix.hpp */,
+				80AF365C1CC77AC7004E9E14 /* ParametricSurface.hpp */,
+				80AF365D1CC77AC7004E9E14 /* RenderingEngine.ES1.cpp */,
+				80AF365E1CC77AC7004E9E14 /* ResourceManager.mm */,
+				80AF365F1CC77AC7004E9E14 /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		80AF36651CC77ACA004E9E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80AF36781CC77B28004E9E14 /* CoreGraphics.framework */,
+				80AF36761CC77B22004E9E14 /* Foundation.framework */,
+				80AF36741CC77B1B004E9E14 /* UIKit.framework */,
+				80AF36721CC77B15004E9E14 /* OpenGLES.framework */,
+				80AF36701CC77B10004E9E14 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80AF36661CC77AD4004E9E14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80AF36681CC77AEA004E9E14 /* Default.png */,
+				80AF36691CC77AEA004E9E14 /* Icon.png */,
+				80AF366A1CC77AEA004E9E14 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80AF36671CC77ADA004E9E14 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80AF366E1CC77B07004E9E14 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80AF367A1CC77B45004E9E14 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				80AF367B1CC77B4D004E9E14 /* Grille.pvr */,
+				80AF367C1CC77B4D004E9E14 /* Marble.pvr */,
+				80AF367D1CC77B4D004E9E14 /* Rhino565.pvr */,
+				80AF367E1CC77B4D004E9E14 /* Tiger565.pvr */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80AF362A1CC77A92004E9E14 /* Trefoil2FakeStencil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AF364E1CC77A92004E9E14 /* Build configuration list for PBXNativeTarget "Trefoil2FakeStencil" */;
+			buildPhases = (
+				80AF36271CC77A92004E9E14 /* Sources */,
+				80AF36281CC77A92004E9E14 /* Frameworks */,
+				80AF36291CC77A92004E9E14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trefoil2FakeStencil;
+			productName = Trefoil2FakeStencil;
+			productReference = 80AF362B1CC77A92004E9E14 /* Trefoil2FakeStencil.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80AF36231CC77A92004E9E14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					80AF362A1CC77A92004E9E14 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 80AF36261CC77A92004E9E14 /* Build configuration list for PBXProject "Trefoil2FakeStencil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80AF36221CC77A92004E9E14;
+			productRefGroup = 80AF362C1CC77A92004E9E14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80AF362A1CC77A92004E9E14 /* Trefoil2FakeStencil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80AF36291CC77A92004E9E14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AF366C1CC77AEA004E9E14 /* Icon.png in Resources */,
+				80AF366B1CC77AEA004E9E14 /* Default.png in Resources */,
+				80AF36821CC77B4D004E9E14 /* Tiger565.pvr in Resources */,
+				80AF36811CC77B4D004E9E14 /* Rhino565.pvr in Resources */,
+				80AF366D1CC77AEA004E9E14 /* Info.plist in Resources */,
+				80AF367F1CC77B4D004E9E14 /* Grille.pvr in Resources */,
+				80AF36801CC77B4D004E9E14 /* Marble.pvr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80AF36271CC77A92004E9E14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AF36621CC77AC7004E9E14 /* GLView.mm in Sources */,
+				80AF36611CC77AC7004E9E14 /* ApplicationEngine.cpp in Sources */,
+				80AF36641CC77AC7004E9E14 /* ResourceManager.mm in Sources */,
+				80AF36601CC77AC7004E9E14 /* AppDelegate.mm in Sources */,
+				80AF366F1CC77B07004E9E14 /* main.m in Sources */,
+				80AF36631CC77AC7004E9E14 /* RenderingEngine.ES1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80AF364C1CC77A92004E9E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80AF364D1CC77A92004E9E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80AF364F1CC77A92004E9E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80AF36501CC77A92004E9E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80AF36261CC77A92004E9E14 /* Build configuration list for PBXProject "Trefoil2FakeStencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AF364C1CC77A92004E9E14 /* Debug */,
+				80AF364D1CC77A92004E9E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AF364E1CC77A92004E9E14 /* Build configuration list for PBXNativeTarget "Trefoil2FakeStencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AF364F1CC77A92004E9E14 /* Debug */,
+				80AF36501CC77A92004E9E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80AF36231CC77A92004E9E14 /* Project object */;
+}
