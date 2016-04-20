@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80FEF49B1CC79045005283EF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4931CC79045005283EF /* AppDelegate.mm */; };
+		80FEF49C1CC79045005283EF /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4941CC79045005283EF /* ApplicationEngine.cpp */; };
+		80FEF49D1CC79045005283EF /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4961CC79045005283EF /* GLView.mm */; };
+		80FEF49E1CC79045005283EF /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4991CC79045005283EF /* RenderingEngine.ES1.cpp */; };
+		80FEF4A31CC79052005283EF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4A01CC79052005283EF /* Default.png */; };
+		80FEF4A41CC79052005283EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4A11CC79052005283EF /* Icon.png */; };
+		80FEF4A51CC79052005283EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4A21CC79052005283EF /* Info.plist */; };
+		80FEF4A81CC7905E005283EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4A71CC7905E005283EF /* main.m */; };
+		80FEF4B21CC79099005283EF /* BlurryCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4AC1CC79099005283EF /* BlurryCircle.png */; };
+		80FEF4B31CC79099005283EF /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4AE1CC79099005283EF /* Circle.png */; };
+		80FEF4B41CC79099005283EF /* GenerateCircle.py in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4AF1CC79099005283EF /* GenerateCircle.py */; };
+		80FEF4B51CC79099005283EF /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FEF4B11CC79099005283EF /* Tile.png */; };
+		80FEF4BA1CC790A7005283EF /* LongMoCap.c in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4B71CC790A7005283EF /* LongMoCap.c */; };
+		80FEF4BB1CC790A7005283EF /* ShortMoCap.c in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4B81CC790A7005283EF /* ShortMoCap.c */; };
+		80FEF4BC1CC790A7005283EF /* StickFigure.c in Sources */ = {isa = PBXBuildFile; fileRef = 80FEF4B91CC790A7005283EF /* StickFigure.c */; };
+		80FEF4BE1CC790D2005283EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FEF4BD1CC790D2005283EF /* QuartzCore.framework */; };
+		80FEF4C01CC790DB005283EF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FEF4BF1CC790DB005283EF /* OpenGLES.framework */; };
+		80FEF4C21CC790E1005283EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FEF4C11CC790E1005283EF /* UIKit.framework */; };
+		80FEF4C41CC790E8005283EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FEF4C31CC790E8005283EF /* Foundation.framework */; };
+		80FEF4C61CC790EE005283EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FEF4C51CC790EE005283EF /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		805E17971CC7901D00279955 /* XaaLInes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XaaLInes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FEF4921CC79045005283EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		80FEF4931CC79045005283EF /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		80FEF4941CC79045005283EF /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.cpp; path = Classes/ApplicationEngine.cpp; sourceTree = "<group>"; };
+		80FEF4951CC79045005283EF /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		80FEF4961CC79045005283EF /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		80FEF4971CC79045005283EF /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		80FEF4981CC79045005283EF /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		80FEF4991CC79045005283EF /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES1.cpp; path = Classes/RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		80FEF49A1CC79045005283EF /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		80FEF4A01CC79052005283EF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80FEF4A11CC79052005283EF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		80FEF4A21CC79052005283EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FEF4A71CC7905E005283EF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80FEF4AB1CC79099005283EF /* BlurryCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurryCircle.h; path = Textures/BlurryCircle.h; sourceTree = "<group>"; };
+		80FEF4AC1CC79099005283EF /* BlurryCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlurryCircle.png; path = Textures/BlurryCircle.png; sourceTree = "<group>"; };
+		80FEF4AD1CC79099005283EF /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = Textures/Circle.h; sourceTree = "<group>"; };
+		80FEF4AE1CC79099005283EF /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Circle.png; path = Textures/Circle.png; sourceTree = "<group>"; };
+		80FEF4AF1CC79099005283EF /* GenerateCircle.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = GenerateCircle.py; path = Textures/GenerateCircle.py; sourceTree = "<group>"; };
+		80FEF4B01CC79099005283EF /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = Textures/Tile.h; sourceTree = "<group>"; };
+		80FEF4B11CC79099005283EF /* Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tile.png; path = Textures/Tile.png; sourceTree = "<group>"; };
+		80FEF4B71CC790A7005283EF /* LongMoCap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LongMoCap.c; path = MotionCapture/LongMoCap.c; sourceTree = "<group>"; };
+		80FEF4B81CC790A7005283EF /* ShortMoCap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ShortMoCap.c; path = MotionCapture/ShortMoCap.c; sourceTree = "<group>"; };
+		80FEF4B91CC790A7005283EF /* StickFigure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = StickFigure.c; path = MotionCapture/StickFigure.c; sourceTree = "<group>"; };
+		80FEF4BD1CC790D2005283EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80FEF4BF1CC790DB005283EF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80FEF4C11CC790E1005283EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80FEF4C31CC790E8005283EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80FEF4C51CC790EE005283EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805E17941CC7901D00279955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FEF4C61CC790EE005283EF /* CoreGraphics.framework in Frameworks */,
+				80FEF4C41CC790E8005283EF /* Foundation.framework in Frameworks */,
+				80FEF4C21CC790E1005283EF /* UIKit.framework in Frameworks */,
+				80FEF4C01CC790DB005283EF /* OpenGLES.framework in Frameworks */,
+				80FEF4BE1CC790D2005283EF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805E178E1CC7901D00279955 = {
+			isa = PBXGroup;
+			children = (
+				80FEF4B61CC7909D005283EF /* MoCap */,
+				80FEF4AA1CC7906A005283EF /* Textures */,
+				80FEF4A91CC79062005283EF /* Frameworks */,
+				80FEF4A61CC79055005283EF /* Other Sources */,
+				80FEF49F1CC79047005283EF /* Resources */,
+				80FEF4911CC7903A005283EF /* Classes */,
+				805E17981CC7901D00279955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		805E17981CC7901D00279955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805E17971CC7901D00279955 /* XaaLInes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80FEF4911CC7903A005283EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4921CC79045005283EF /* AppDelegate.h */,
+				80FEF4931CC79045005283EF /* AppDelegate.mm */,
+				80FEF4941CC79045005283EF /* ApplicationEngine.cpp */,
+				80FEF4951CC79045005283EF /* GLView.h */,
+				80FEF4961CC79045005283EF /* GLView.mm */,
+				80FEF4971CC79045005283EF /* Interfaces.hpp */,
+				80FEF4981CC79045005283EF /* Matrix.hpp */,
+				80FEF4991CC79045005283EF /* RenderingEngine.ES1.cpp */,
+				80FEF49A1CC79045005283EF /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		80FEF49F1CC79047005283EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4A01CC79052005283EF /* Default.png */,
+				80FEF4A11CC79052005283EF /* Icon.png */,
+				80FEF4A21CC79052005283EF /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80FEF4A61CC79055005283EF /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4A71CC7905E005283EF /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80FEF4A91CC79062005283EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4C51CC790EE005283EF /* CoreGraphics.framework */,
+				80FEF4C31CC790E8005283EF /* Foundation.framework */,
+				80FEF4C11CC790E1005283EF /* UIKit.framework */,
+				80FEF4BF1CC790DB005283EF /* OpenGLES.framework */,
+				80FEF4BD1CC790D2005283EF /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80FEF4AA1CC7906A005283EF /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4AB1CC79099005283EF /* BlurryCircle.h */,
+				80FEF4AC1CC79099005283EF /* BlurryCircle.png */,
+				80FEF4AD1CC79099005283EF /* Circle.h */,
+				80FEF4AE1CC79099005283EF /* Circle.png */,
+				80FEF4AF1CC79099005283EF /* GenerateCircle.py */,
+				80FEF4B01CC79099005283EF /* Tile.h */,
+				80FEF4B11CC79099005283EF /* Tile.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		80FEF4B61CC7909D005283EF /* MoCap */ = {
+			isa = PBXGroup;
+			children = (
+				80FEF4B71CC790A7005283EF /* LongMoCap.c */,
+				80FEF4B81CC790A7005283EF /* ShortMoCap.c */,
+				80FEF4B91CC790A7005283EF /* StickFigure.c */,
+			);
+			name = MoCap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805E17961CC7901D00279955 /* XaaLInes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805E17BA1CC7901D00279955 /* Build configuration list for PBXNativeTarget "XaaLInes" */;
+			buildPhases = (
+				805E17931CC7901D00279955 /* Sources */,
+				805E17941CC7901D00279955 /* Frameworks */,
+				805E17951CC7901D00279955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XaaLInes;
+			productName = XaaLInes;
+			productReference = 805E17971CC7901D00279955 /* XaaLInes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805E178F1CC7901D00279955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					805E17961CC7901D00279955 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 805E17921CC7901D00279955 /* Build configuration list for PBXProject "XaaLInes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805E178E1CC7901D00279955;
+			productRefGroup = 805E17981CC7901D00279955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805E17961CC7901D00279955 /* XaaLInes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805E17951CC7901D00279955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FEF4A41CC79052005283EF /* Icon.png in Resources */,
+				80FEF4B31CC79099005283EF /* Circle.png in Resources */,
+				80FEF4B21CC79099005283EF /* BlurryCircle.png in Resources */,
+				80FEF4B51CC79099005283EF /* Tile.png in Resources */,
+				80FEF4B41CC79099005283EF /* GenerateCircle.py in Resources */,
+				80FEF4A31CC79052005283EF /* Default.png in Resources */,
+				80FEF4A51CC79052005283EF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805E17931CC7901D00279955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FEF4A81CC7905E005283EF /* main.m in Sources */,
+				80FEF49D1CC79045005283EF /* GLView.mm in Sources */,
+				80FEF49C1CC79045005283EF /* ApplicationEngine.cpp in Sources */,
+				80FEF49B1CC79045005283EF /* AppDelegate.mm in Sources */,
+				80FEF4BA1CC790A7005283EF /* LongMoCap.c in Sources */,
+				80FEF49E1CC79045005283EF /* RenderingEngine.ES1.cpp in Sources */,
+				80FEF4BC1CC790A7005283EF /* StickFigure.c in Sources */,
+				80FEF4BB1CC790A7005283EF /* ShortMoCap.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		805E17B81CC7901D00279955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		805E17B91CC7901D00279955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805E17BB1CC7901D00279955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		805E17BC1CC7901D00279955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805E17921CC7901D00279955 /* Build configuration list for PBXProject "XaaLInes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805E17B81CC7901D00279955 /* Debug */,
+				805E17B91CC7901D00279955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805E17BA1CC7901D00279955 /* Build configuration list for PBXNativeTarget "XaaLInes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805E17BB1CC7901D00279955 /* Debug */,
+				805E17BC1CC7901D00279955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 805E178F1CC7901D00279955 /* Project object */;
+}
