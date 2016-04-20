@@ -20,15 +20,15 @@ private:
     bool m_dragging;
     IRenderingEngine* m_renderingEngine;
 };
-    
+
 IApplicationEngine* CreateApplicationEngine(IRenderingEngine* renderingEngine)
 {
     return new ApplicationEngine(renderingEngine);
 }
 
 ApplicationEngine::ApplicationEngine(IRenderingEngine* renderingEngine) :
-    m_renderingEngine(renderingEngine),
-    m_dragging(false)
+m_renderingEngine(renderingEngine),
+m_dragging(false)
 {
 }
 
@@ -65,7 +65,7 @@ void ApplicationEngine::OnFingerUp(ivec2 location)
 void ApplicationEngine::OnFingerDown(ivec2 location)
 {
     if (!m_dragging) {
-        m_dragging = true;  
+        m_dragging = true;
         m_dragStart = m_dragEnd = location.x;
     }
 }

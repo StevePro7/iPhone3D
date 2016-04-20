@@ -81,7 +81,7 @@ public:
                 description.Format = TextureFormatRgba;
                 description.BitsPerComponent = 4;
                 break;
-            case OGL_PVRTC2:    
+            case OGL_PVRTC2:
                 description.Format = hasAlpha ? TextureFormatPvrtcRgba2 :
                 TextureFormatPvrtcRgb2;
                 break;
