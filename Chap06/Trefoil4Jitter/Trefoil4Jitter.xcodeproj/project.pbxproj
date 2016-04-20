@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8068A22F1CC78F1C00F232EF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8068A2251CC78F1C00F232EF /* AppDelegate.mm */; };
+		8068A2301CC78F1C00F232EF /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8068A2261CC78F1C00F232EF /* ApplicationEngine.cpp */; };
+		8068A2311CC78F1C00F232EF /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8068A2281CC78F1C00F232EF /* GLView.mm */; };
+		8068A2321CC78F1C00F232EF /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8068A22C1CC78F1C00F232EF /* RenderingEngine.ES1.cpp */; };
+		8068A2331CC78F1C00F232EF /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8068A22D1CC78F1C00F232EF /* ResourceManager.mm */; };
+		8068A2381CC78F2900F232EF /* Marble.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 8068A2351CC78F2800F232EF /* Marble.pvr */; };
+		8068A2391CC78F2900F232EF /* Rhino565.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 8068A2361CC78F2800F232EF /* Rhino565.pvr */; };
+		8068A23A1CC78F2900F232EF /* Tiger565.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 8068A2371CC78F2900F232EF /* Tiger565.pvr */; };
+		8068A23F1CC78F3400F232EF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8068A23C1CC78F3400F232EF /* Default.png */; };
+		8068A2401CC78F3400F232EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8068A23D1CC78F3400F232EF /* Icon.png */; };
+		8068A2411CC78F3400F232EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8068A23E1CC78F3400F232EF /* Info.plist */; };
+		8068A2451CC78F5000F232EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8068A2441CC78F5000F232EF /* main.m */; };
+		8068A2471CC78F5B00F232EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8068A2461CC78F5B00F232EF /* QuartzCore.framework */; };
+		8068A2491CC78F6200F232EF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8068A2481CC78F6200F232EF /* OpenGLES.framework */; };
+		8068A24B1CC78F6700F232EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8068A24A1CC78F6700F232EF /* UIKit.framework */; };
+		8068A24D1CC78F6E00F232EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8068A24C1CC78F6E00F232EF /* Foundation.framework */; };
+		8068A24F1CC78F7300F232EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8068A24E1CC78F7300F232EF /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8068A1FA1CC78ECF00F232EF /* Trefoil4Jitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trefoil4Jitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8068A2241CC78F1C00F232EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		8068A2251CC78F1C00F232EF /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		8068A2261CC78F1C00F232EF /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.cpp; path = Classes/ApplicationEngine.cpp; sourceTree = "<group>"; };
+		8068A2271CC78F1C00F232EF /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		8068A2281CC78F1C00F232EF /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		8068A2291CC78F1C00F232EF /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		8068A22A1CC78F1C00F232EF /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		8068A22B1CC78F1C00F232EF /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		8068A22C1CC78F1C00F232EF /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES1.cpp; path = Classes/RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		8068A22D1CC78F1C00F232EF /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourceManager.mm; path = Classes/ResourceManager.mm; sourceTree = "<group>"; };
+		8068A22E1CC78F1C00F232EF /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		8068A2351CC78F2800F232EF /* Marble.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Marble.pvr; path = Textures/Marble.pvr; sourceTree = "<group>"; };
+		8068A2361CC78F2800F232EF /* Rhino565.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rhino565.pvr; path = Textures/Rhino565.pvr; sourceTree = "<group>"; };
+		8068A2371CC78F2900F232EF /* Tiger565.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tiger565.pvr; path = Textures/Tiger565.pvr; sourceTree = "<group>"; };
+		8068A23C1CC78F3400F232EF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8068A23D1CC78F3400F232EF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8068A23E1CC78F3400F232EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8068A2441CC78F5000F232EF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8068A2461CC78F5B00F232EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8068A2481CC78F6200F232EF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8068A24A1CC78F6700F232EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8068A24C1CC78F6E00F232EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8068A24E1CC78F7300F232EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8068A1F71CC78ECF00F232EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8068A24F1CC78F7300F232EF /* CoreGraphics.framework in Frameworks */,
+				8068A24D1CC78F6E00F232EF /* Foundation.framework in Frameworks */,
+				8068A24B1CC78F6700F232EF /* UIKit.framework in Frameworks */,
+				8068A2491CC78F6200F232EF /* OpenGLES.framework in Frameworks */,
+				8068A2471CC78F5B00F232EF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8068A1F11CC78ECF00F232EF = {
+			isa = PBXGroup;
+			children = (
+				8068A2431CC78F4600F232EF /* Other Sources */,
+				8068A2421CC78F3F00F232EF /* Frameworks */,
+				8068A23B1CC78F2B00F232EF /* Resources */,
+				8068A2341CC78F1F00F232EF /* Textures */,
+				8068A2231CC78F0F00F232EF /* Classes */,
+				8068A1FB1CC78ECF00F232EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8068A1FB1CC78ECF00F232EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8068A1FA1CC78ECF00F232EF /* Trefoil4Jitter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8068A2231CC78F0F00F232EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8068A2241CC78F1C00F232EF /* AppDelegate.h */,
+				8068A2251CC78F1C00F232EF /* AppDelegate.mm */,
+				8068A2261CC78F1C00F232EF /* ApplicationEngine.cpp */,
+				8068A2271CC78F1C00F232EF /* GLView.h */,
+				8068A2281CC78F1C00F232EF /* GLView.mm */,
+				8068A2291CC78F1C00F232EF /* Interfaces.hpp */,
+				8068A22A1CC78F1C00F232EF /* Matrix.hpp */,
+				8068A22B1CC78F1C00F232EF /* ParametricSurface.hpp */,
+				8068A22C1CC78F1C00F232EF /* RenderingEngine.ES1.cpp */,
+				8068A22D1CC78F1C00F232EF /* ResourceManager.mm */,
+				8068A22E1CC78F1C00F232EF /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8068A2341CC78F1F00F232EF /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				8068A2351CC78F2800F232EF /* Marble.pvr */,
+				8068A2361CC78F2800F232EF /* Rhino565.pvr */,
+				8068A2371CC78F2900F232EF /* Tiger565.pvr */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		8068A23B1CC78F2B00F232EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8068A23C1CC78F3400F232EF /* Default.png */,
+				8068A23D1CC78F3400F232EF /* Icon.png */,
+				8068A23E1CC78F3400F232EF /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8068A2421CC78F3F00F232EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8068A24E1CC78F7300F232EF /* CoreGraphics.framework */,
+				8068A24C1CC78F6E00F232EF /* Foundation.framework */,
+				8068A24A1CC78F6700F232EF /* UIKit.framework */,
+				8068A2481CC78F6200F232EF /* OpenGLES.framework */,
+				8068A2461CC78F5B00F232EF /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8068A2431CC78F4600F232EF /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8068A2441CC78F5000F232EF /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8068A1F91CC78ECF00F232EF /* Trefoil4Jitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8068A21D1CC78ECF00F232EF /* Build configuration list for PBXNativeTarget "Trefoil4Jitter" */;
+			buildPhases = (
+				8068A1F61CC78ECF00F232EF /* Sources */,
+				8068A1F71CC78ECF00F232EF /* Frameworks */,
+				8068A1F81CC78ECF00F232EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trefoil4Jitter;
+			productName = Trefoil4Jitter;
+			productReference = 8068A1FA1CC78ECF00F232EF /* Trefoil4Jitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8068A1F21CC78ECF00F232EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					8068A1F91CC78ECF00F232EF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 8068A1F51CC78ECF00F232EF /* Build configuration list for PBXProject "Trefoil4Jitter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8068A1F11CC78ECF00F232EF;
+			productRefGroup = 8068A1FB1CC78ECF00F232EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8068A1F91CC78ECF00F232EF /* Trefoil4Jitter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8068A1F81CC78ECF00F232EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8068A2391CC78F2900F232EF /* Rhino565.pvr in Resources */,
+				8068A2381CC78F2900F232EF /* Marble.pvr in Resources */,
+				8068A2411CC78F3400F232EF /* Info.plist in Resources */,
+				8068A2401CC78F3400F232EF /* Icon.png in Resources */,
+				8068A23A1CC78F2900F232EF /* Tiger565.pvr in Resources */,
+				8068A23F1CC78F3400F232EF /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8068A1F61CC78ECF00F232EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8068A2311CC78F1C00F232EF /* GLView.mm in Sources */,
+				8068A2301CC78F1C00F232EF /* ApplicationEngine.cpp in Sources */,
+				8068A2331CC78F1C00F232EF /* ResourceManager.mm in Sources */,
+				8068A22F1CC78F1C00F232EF /* AppDelegate.mm in Sources */,
+				8068A2451CC78F5000F232EF /* main.m in Sources */,
+				8068A2321CC78F1C00F232EF /* RenderingEngine.ES1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8068A21B1CC78ECF00F232EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8068A21C1CC78ECF00F232EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8068A21E1CC78ECF00F232EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8068A21F1CC78ECF00F232EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8068A1F51CC78ECF00F232EF /* Build configuration list for PBXProject "Trefoil4Jitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8068A21B1CC78ECF00F232EF /* Debug */,
+				8068A21C1CC78ECF00F232EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8068A21D1CC78ECF00F232EF /* Build configuration list for PBXNativeTarget "Trefoil4Jitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8068A21E1CC78ECF00F232EF /* Debug */,
+				8068A21F1CC78ECF00F232EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8068A1F21CC78ECF00F232EF /* Project object */;
+}
