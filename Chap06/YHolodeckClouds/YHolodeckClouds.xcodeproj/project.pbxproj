@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80F544AF1CC79FA500ED595E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F544AE1CC79FA500ED595E /* main.m */; };
+		80F544D41CC7A02900ED595E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544D31CC7A02900ED595E /* CoreLocation.framework */; };
+		80F544D61CC7A02F00ED595E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544D51CC7A02F00ED595E /* QuartzCore.framework */; };
+		80F544D81CC7A03500ED595E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544D71CC7A03500ED595E /* OpenGLES.framework */; };
+		80F544DA1CC7A03D00ED595E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544D91CC7A03D00ED595E /* CoreGraphics.framework */; };
+		80F544DC1CC7A04400ED595E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544DB1CC7A04400ED595E /* UIKit.framework */; };
+		80F544DE1CC7A04A00ED595E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F544DD1CC7A04A00ED595E /* Foundation.framework */; };
+		80F544E11CC7A06200ED595E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544E01CC7A06200ED595E /* Default.png */; };
+		80F544E41CC7A07F00ED595E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544E31CC7A07F00ED595E /* Icon.png */; };
+		80F544F21CC7A09000ED595E /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F544E71CC7A09000ED595E /* AccelerometerFilter.m */; };
+		80F544F31CC7A09000ED595E /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80F544E91CC7A09000ED595E /* AppDelegate.mm */; };
+		80F544F41CC7A09000ED595E /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80F544EB1CC7A09000ED595E /* GLView.mm */; };
+		80F544F51CC7A09000ED595E /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80F544EF1CC7A09000ED595E /* RenderingEngine.ES1.cpp */; };
+		80F544F61CC7A09000ED595E /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80F544F01CC7A09000ED595E /* ResourceManager.mm */; };
+		80F545011CC7A0AA00ED595E /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544F81CC7A0AA00ED595E /* Button.png */; };
+		80F545021CC7A0AA00ED595E /* East.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544F91CC7A0AA00ED595E /* East.png */; };
+		80F545031CC7A0AA00ED595E /* Moss.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FA1CC7A0AA00ED595E /* Moss.pvr */; };
+		80F545041CC7A0AA00ED595E /* North.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FB1CC7A0AA00ED595E /* North.png */; };
+		80F545051CC7A0AA00ED595E /* Sky.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FC1CC7A0AA00ED595E /* Sky.pvr */; };
+		80F545061CC7A0AA00ED595E /* South.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FD1CC7A0AA00ED595E /* South.png */; };
+		80F545071CC7A0AA00ED595E /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FE1CC7A0AA00ED595E /* Triangle.png */; };
+		80F545081CC7A0AA00ED595E /* TriangleFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F544FF1CC7A0AA00ED595E /* TriangleFigure.png */; };
+		80F545091CC7A0AA00ED595E /* West.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F545001CC7A0AA00ED595E /* West.png */; };
+		80F545111CC7A10900ED595E /* GeodesicDome.py in Resources */ = {isa = PBXBuildFile; fileRef = 80F545101CC7A10900ED595E /* GeodesicDome.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80F544A91CC79FA500ED595E /* YHolodeckClouds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHolodeckClouds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F544AD1CC79FA500ED595E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = YHolodeckClouds/Info.plist; sourceTree = "<group>"; };
+		80F544AE1CC79FA500ED595E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = YHolodeckClouds/main.m; sourceTree = "<group>"; };
+		80F544D31CC7A02900ED595E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80F544D51CC7A02F00ED595E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80F544D71CC7A03500ED595E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80F544D91CC7A03D00ED595E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80F544DB1CC7A04400ED595E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80F544DD1CC7A04A00ED595E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80F544E01CC7A06200ED595E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80F544E31CC7A07F00ED595E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		80F544E61CC7A09000ED595E /* AccelerometerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerometerFilter.h; path = Classes/AccelerometerFilter.h; sourceTree = "<group>"; };
+		80F544E71CC7A09000ED595E /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerometerFilter.m; path = Classes/AccelerometerFilter.m; sourceTree = "<group>"; };
+		80F544E81CC7A09000ED595E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		80F544E91CC7A09000ED595E /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		80F544EA1CC7A09000ED595E /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		80F544EB1CC7A09000ED595E /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		80F544EC1CC7A09000ED595E /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		80F544ED1CC7A09000ED595E /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		80F544EE1CC7A09000ED595E /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		80F544EF1CC7A09000ED595E /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES1.cpp; path = Classes/RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		80F544F01CC7A09000ED595E /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourceManager.mm; path = Classes/ResourceManager.mm; sourceTree = "<group>"; };
+		80F544F11CC7A09000ED595E /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		80F544F81CC7A0AA00ED595E /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = Textures/Button.png; sourceTree = "<group>"; };
+		80F544F91CC7A0AA00ED595E /* East.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = East.png; path = Textures/East.png; sourceTree = "<group>"; };
+		80F544FA1CC7A0AA00ED595E /* Moss.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Moss.pvr; path = Textures/Moss.pvr; sourceTree = "<group>"; };
+		80F544FB1CC7A0AA00ED595E /* North.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = North.png; path = Textures/North.png; sourceTree = "<group>"; };
+		80F544FC1CC7A0AA00ED595E /* Sky.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sky.pvr; path = Textures/Sky.pvr; sourceTree = "<group>"; };
+		80F544FD1CC7A0AA00ED595E /* South.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = South.png; path = Textures/South.png; sourceTree = "<group>"; };
+		80F544FE1CC7A0AA00ED595E /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Triangle.png; path = Textures/Triangle.png; sourceTree = "<group>"; };
+		80F544FF1CC7A0AA00ED595E /* TriangleFigure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TriangleFigure.png; path = Textures/TriangleFigure.png; sourceTree = "<group>"; };
+		80F545001CC7A0AA00ED595E /* West.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = West.png; path = Textures/West.png; sourceTree = "<group>"; };
+		80F5450C1CC7A0F800ED595E /* PVRTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTGlobal.h; path = PowerVR/PVRTGlobal.h; sourceTree = "<group>"; };
+		80F5450D1CC7A0F800ED595E /* PVRTTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTTexture.h; path = PowerVR/PVRTTexture.h; sourceTree = "<group>"; };
+		80F5450F1CC7A10900ED595E /* GeodesicDome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeodesicDome.h; path = Models/GeodesicDome.h; sourceTree = "<group>"; };
+		80F545101CC7A10900ED595E /* GeodesicDome.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = GeodesicDome.py; path = Models/GeodesicDome.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80F544A61CC79FA500ED595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F544DE1CC7A04A00ED595E /* Foundation.framework in Frameworks */,
+				80F544DC1CC7A04400ED595E /* UIKit.framework in Frameworks */,
+				80F544DA1CC7A03D00ED595E /* CoreGraphics.framework in Frameworks */,
+				80F544D81CC7A03500ED595E /* OpenGLES.framework in Frameworks */,
+				80F544D61CC7A02F00ED595E /* QuartzCore.framework in Frameworks */,
+				80F544D41CC7A02900ED595E /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80F544A01CC79FA500ED595E = {
+			isa = PBXGroup;
+			children = (
+				80F5450E1CC7A0FB00ED595E /* Models */,
+				80F5450B1CC7A0EE00ED595E /* PowerVR */,
+				80F5450A1CC7A0B400ED595E /* Utility */,
+				80F544F71CC7A09300ED595E /* Textures */,
+				80F544E51CC7A08300ED595E /* Classes */,
+				80F544E21CC7A06500ED595E /* Other Sources */,
+				80F544DF1CC7A05000ED595E /* Resources */,
+				80F544D21CC79FF400ED595E /* Frameworks */,
+				80F544AB1CC79FA500ED595E /* YHolodeckClouds */,
+				80F544AA1CC79FA500ED595E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80F544AA1CC79FA500ED595E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80F544A91CC79FA500ED595E /* YHolodeckClouds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80F544AB1CC79FA500ED595E /* YHolodeckClouds */ = {
+			isa = PBXGroup;
+			children = (
+				80F544AC1CC79FA500ED595E /* Supporting Files */,
+			);
+			path = YHolodeckClouds;
+			sourceTree = "<group>";
+		};
+		80F544AC1CC79FA500ED595E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80F544D21CC79FF400ED595E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80F544DD1CC7A04A00ED595E /* Foundation.framework */,
+				80F544DB1CC7A04400ED595E /* UIKit.framework */,
+				80F544D91CC7A03D00ED595E /* CoreGraphics.framework */,
+				80F544D71CC7A03500ED595E /* OpenGLES.framework */,
+				80F544D51CC7A02F00ED595E /* QuartzCore.framework */,
+				80F544D31CC7A02900ED595E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80F544DF1CC7A05000ED595E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80F544E31CC7A07F00ED595E /* Icon.png */,
+				80F544E01CC7A06200ED595E /* Default.png */,
+				80F544AD1CC79FA500ED595E /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80F544E21CC7A06500ED595E /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80F544AE1CC79FA500ED595E /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80F544E51CC7A08300ED595E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80F544EF1CC7A09000ED595E /* RenderingEngine.ES1.cpp */,
+				80F544EA1CC7A09000ED595E /* GLView.h */,
+				80F544EB1CC7A09000ED595E /* GLView.mm */,
+				80F544EC1CC7A09000ED595E /* Interfaces.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		80F544F71CC7A09300ED595E /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				80F544F81CC7A0AA00ED595E /* Button.png */,
+				80F544F91CC7A0AA00ED595E /* East.png */,
+				80F544FA1CC7A0AA00ED595E /* Moss.pvr */,
+				80F544FB1CC7A0AA00ED595E /* North.png */,
+				80F544FC1CC7A0AA00ED595E /* Sky.pvr */,
+				80F544FD1CC7A0AA00ED595E /* South.png */,
+				80F544FE1CC7A0AA00ED595E /* Triangle.png */,
+				80F544FF1CC7A0AA00ED595E /* TriangleFigure.png */,
+				80F545001CC7A0AA00ED595E /* West.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		80F5450A1CC7A0B400ED595E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				80F544E61CC7A09000ED595E /* AccelerometerFilter.h */,
+				80F544E71CC7A09000ED595E /* AccelerometerFilter.m */,
+				80F544F01CC7A09000ED595E /* ResourceManager.mm */,
+				80F544EE1CC7A09000ED595E /* ParametricSurface.hpp */,
+				80F544E81CC7A09000ED595E /* AppDelegate.h */,
+				80F544E91CC7A09000ED595E /* AppDelegate.mm */,
+				80F544ED1CC7A09000ED595E /* Matrix.hpp */,
+				80F544F11CC7A09000ED595E /* Vector.hpp */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		80F5450B1CC7A0EE00ED595E /* PowerVR */ = {
+			isa = PBXGroup;
+			children = (
+				80F5450C1CC7A0F800ED595E /* PVRTGlobal.h */,
+				80F5450D1CC7A0F800ED595E /* PVRTTexture.h */,
+			);
+			name = PowerVR;
+			sourceTree = "<group>";
+		};
+		80F5450E1CC7A0FB00ED595E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80F5450F1CC7A10900ED595E /* GeodesicDome.h */,
+				80F545101CC7A10900ED595E /* GeodesicDome.py */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80F544A81CC79FA500ED595E /* YHolodeckClouds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F544CC1CC79FA500ED595E /* Build configuration list for PBXNativeTarget "YHolodeckClouds" */;
+			buildPhases = (
+				80F544A51CC79FA500ED595E /* Sources */,
+				80F544A61CC79FA500ED595E /* Frameworks */,
+				80F544A71CC79FA500ED595E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YHolodeckClouds;
+			productName = YHolodeckClouds;
+			productReference = 80F544A91CC79FA500ED595E /* YHolodeckClouds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80F544A11CC79FA500ED595E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					80F544A81CC79FA500ED595E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 80F544A41CC79FA500ED595E /* Build configuration list for PBXProject "YHolodeckClouds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80F544A01CC79FA500ED595E;
+			productRefGroup = 80F544AA1CC79FA500ED595E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80F544A81CC79FA500ED595E /* YHolodeckClouds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80F544A71CC79FA500ED595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F545021CC7A0AA00ED595E /* East.png in Resources */,
+				80F545041CC7A0AA00ED595E /* North.png in Resources */,
+				80F545111CC7A10900ED595E /* GeodesicDome.py in Resources */,
+				80F545031CC7A0AA00ED595E /* Moss.pvr in Resources */,
+				80F545091CC7A0AA00ED595E /* West.png in Resources */,
+				80F544E41CC7A07F00ED595E /* Icon.png in Resources */,
+				80F544E11CC7A06200ED595E /* Default.png in Resources */,
+				80F545011CC7A0AA00ED595E /* Button.png in Resources */,
+				80F545051CC7A0AA00ED595E /* Sky.pvr in Resources */,
+				80F545071CC7A0AA00ED595E /* Triangle.png in Resources */,
+				80F545061CC7A0AA00ED595E /* South.png in Resources */,
+				80F545081CC7A0AA00ED595E /* TriangleFigure.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80F544A51CC79FA500ED595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F544AF1CC79FA500ED595E /* main.m in Sources */,
+				80F544F31CC7A09000ED595E /* AppDelegate.mm in Sources */,
+				80F544F21CC7A09000ED595E /* AccelerometerFilter.m in Sources */,
+				80F544F61CC7A09000ED595E /* ResourceManager.mm in Sources */,
+				80F544F41CC7A09000ED595E /* GLView.mm in Sources */,
+				80F544F51CC7A09000ED595E /* RenderingEngine.ES1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80F544CA1CC79FA500ED595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80F544CB1CC79FA500ED595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80F544CD1CC79FA500ED595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YHolodeckClouds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80F544CE1CC79FA500ED595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YHolodeckClouds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80F544A41CC79FA500ED595E /* Build configuration list for PBXProject "YHolodeckClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F544CA1CC79FA500ED595E /* Debug */,
+				80F544CB1CC79FA500ED595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F544CC1CC79FA500ED595E /* Build configuration list for PBXNativeTarget "YHolodeckClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F544CD1CC79FA500ED595E /* Debug */,
+				80F544CE1CC79FA500ED595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80F544A11CC79FA500ED595E /* Project object */;
+}
