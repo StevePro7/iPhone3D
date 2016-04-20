@@ -15,7 +15,7 @@
     {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) self.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES1;
         m_context = [[EAGLContext alloc] initWithAPI:api];
         
@@ -25,16 +25,16 @@
         }
         
         m_resourceManager = CreateResourceManager();
-
+        
         NSLog(@"Using OpenGL ES 1.1");
         m_renderingEngine = ES1::CreateRenderingEngine(m_resourceManager);
         
         m_applicationEngine = CreateApplicationEngine(m_renderingEngine);
-
+        
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
-                
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
+        
         int width = CGRectGetWidth(frame);
         int height = CGRectGetHeight(frame);
         m_applicationEngine->Initialize(width, height);
@@ -44,10 +44,10 @@
         
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
+                          forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
