@@ -5,9 +5,9 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface GLView : UIView <UIImagePickerControllerDelegate,
-                            UINavigationControllerDelegate,
-                            CLLocationManagerDelegate,
-                            UIAccelerometerDelegate> {
+UINavigationControllerDelegate,
+CLLocationManagerDelegate,
+UIAccelerometerDelegate> {
 @private
     IRenderingEngine* m_renderingEngine;
     IResourceManager* m_resourceManager;

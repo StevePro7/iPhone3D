@@ -16,7 +16,7 @@
     m_phi = 0;
     m_velocity = vec2(0, 0);
     m_visibleButtons = 0;
-
+    
     if (self = [super initWithFrame:frame]) {
         
         m_cameraSupported = [UIImagePickerController isSourceTypeAvailable:
@@ -38,10 +38,10 @@
         }
         
         m_resourceManager = CreateResourceManager();
-
+        
         NSLog(@"Using OpenGL ES 1.1");
         m_renderingEngine = CreateRenderingEngine(m_resourceManager);
-
+        
         m_locationManager = [[CLLocationManager alloc] init];
         
 #if TARGET_IPHONE_SIMULATOR
@@ -68,9 +68,9 @@
             NSLog(@"Accelerometer is supported.");
             float updateFrequency = 60.0f;
             m_filter = [[LowpassFilter alloc] initWithSampleRate:updateFrequency
-                                              cutoffFrequency:5.0];
+                                                 cutoffFrequency:5.0];
             m_filter.adaptive = YES;
-
+            
             [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1.0 / updateFrequency];
             [[UIAccelerometer sharedAccelerometer] setDelegate:self];
         } else {
@@ -79,20 +79,20 @@
         }
         
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
         
         m_timestamp = CACurrentMediaTime();
-
+        
         bool opaqueBackground = !m_cameraSupported;
         m_renderingEngine->Initialize(opaqueBackground);
-
+        
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
+                          forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
@@ -126,7 +126,7 @@
 {
     if (m_cameraSupported && m_viewController == 0)
         [self createCameraController];
-
+    
     if (m_paused)
         return;
     
@@ -137,7 +137,7 @@
         m_theta -= speed * elapsedSeconds * m_velocity.x;
         m_phi += speed * elapsedSeconds * m_velocity.y;
     }
-
+    
     ButtonMask buttonFlags = m_visibleButtons;
     if (m_velocity.x < 0) buttonFlags |= ButtonFlagsPressingLeft;
     if (m_velocity.x > 0) buttonFlags |= ButtonFlagsPressingRight;
@@ -160,7 +160,7 @@ bool buttonHit(CGPoint location, int x, int y)
     UITouch* touch = [touches anyObject];
     CGPoint location  = [touch locationInView: self];
     float delta = 1;
-
+    
     if (m_visibleButtons & ButtonFlagsShowVertical) {
         if (buttonHit(location, 35, 240))
             m_velocity.y = -delta;
@@ -189,7 +189,7 @@ bool buttonHit(CGPoint location, int x, int y)
 }
 
 - (void) locationManager: (CLLocationManager*) manager
-         didUpdateHeading: (CLHeading*) heading
+        didUpdateHeading: (CLHeading*) heading
 {
     // Use magneticHeading rather than trueHeading to avoid usage of GPS.
     CLLocationDirection degrees = heading.magneticHeading;
@@ -200,7 +200,7 @@ bool buttonHit(CGPoint location, int x, int y)
          didAccelerate: (UIAcceleration*) acceleration
 {
     [m_filter addAcceleration:acceleration];
-	float x = -m_filter.x;
+    float x = -m_filter.x;
     float y = m_filter.z;
     m_phi = atan2(y, x) * 180.0f / Pi;
     
