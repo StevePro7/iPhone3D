@@ -52,7 +52,7 @@ private:
     Renderbuffers m_renderbuffers;
     IResourceManager* m_resourceManager;
 };
-    
+
 IRenderingEngine* CreateRenderingEngine(IResourceManager* resourceManager)
 {
     return new RenderingEngine(resourceManager);
@@ -81,7 +81,7 @@ void RenderingEngine::Initialize()
     m_textures.South = CreateTexture("South.png");
     m_textures.East = CreateTexture("East.png");
     m_textures.West = CreateTexture("West.png");
-
+    
     // Extract width and height from the color buffer.
     int width, height;
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES,
@@ -89,12 +89,12 @@ void RenderingEngine::Initialize()
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES,
                                     GL_RENDERBUFFER_HEIGHT_OES, &height);
     glViewport(0, 0, width, height);
-
+    
     // Create a depth buffer that has the same size as the color buffer.
     glGenRenderbuffersOES(1, &m_renderbuffers.Depth);
     glBindRenderbufferOES(GL_RENDERBUFFER_OES, m_renderbuffers.Depth);
     glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, width, height);
-        
+    
     // Create the framebuffer object.
     GLuint framebuffer;
     glGenFramebuffersOES(1, &framebuffer);
@@ -111,7 +111,7 @@ void RenderingEngine::Initialize()
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_DEPTH_TEST);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
+    
     // Set the model-view transform.
     glMatrixMode(GL_MODELVIEW);
     glRotatef(90, 0, 0, 1);
@@ -161,19 +161,19 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
     frameCounter++;
     
     glPushMatrix();
-
+    
     glRotatef(phi, 1, 0, 0);
     glRotatef(theta, 0, 1, 0);
     
     glClear(GL_DEPTH_BUFFER_BIT);
-
+    
     glPushMatrix();
     glScalef(100, 100, 100);
     glRotatef(frameCounter * 2, 0, 1, 0);
     glBindTexture(GL_TEXTURE_2D, m_textures.Sky);
     RenderDrawable(m_drawables.SkySphere);
     glPopMatrix();
-
+    
     glEnable(GL_BLEND);
     glBindTexture(GL_TEXTURE_2D, m_textures.Triangle);
     glPushMatrix();
@@ -183,7 +183,7 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
     RenderDrawable(m_drawables.GeodesicDome);
     glColor4f(1, 1, 1, 1);
     glPopMatrix();
-
+    
     float textScale = 1.0 / 10.0 + sin(frameCounter / 10.0f) / 150.0;
     
     RenderText(m_textures.East, 0, textScale);
@@ -191,7 +191,7 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
     RenderText(m_textures.South, 90, textScale);
     RenderText(m_textures.North, -90, textScale);
     glDisable(GL_BLEND);
-
+    
     glTranslatef(0, 10, -10);
     glRotatef(90, 1, 0, 0);
     glScalef(4, 4, 4);
@@ -211,7 +211,7 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
         glPushMatrix();
         glLoadIdentity();
         glOrthof(-160, 160, -240, 240, 0, 1);
-
+        
         if (buttons & ButtonFlagsShowHorizontal) {
             glMatrixMode(GL_MODELVIEW);
             glTranslatef(200, 0, 0);
@@ -223,10 +223,10 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
             SetButtonAlpha(buttons, ButtonFlagsPressingRight);
             RenderDrawable(m_drawables.Quad);
             glRotatef(-180, 0, 0, 1);
-            glMatrixMode(GL_MODELVIEW); 
+            glMatrixMode(GL_MODELVIEW);
             glTranslatef(200, 0, 0);
         }
-
+        
         if (buttons & ButtonFlagsShowVertical) {
             glMatrixMode(GL_MODELVIEW);
             glTranslatef(0, 125, 0);
@@ -244,7 +244,7 @@ void RenderingEngine::Render(float theta, float phi, ButtonMask buttons) const
             glMatrixMode(GL_MODELVIEW);
             glTranslatef(0, 125, 0);
         }
-
+        
         glColor4f(1, 1, 1, 1);
         glMatrixMode(GL_PROJECTION);
         glPopMatrix();

@@ -1,7 +1,7 @@
 /*
-     File: AccelerometerFilter.h
+ File: AccelerometerFilter.h
  Abstract: Implements a low and high pass filter with optional adaptive filtering.
-  Version: 2.1
+ Version: 2.1
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
  Inc. ("Apple") in consideration of your agreement to the following
@@ -43,15 +43,15 @@
  
  Copyright (C) 2009 Apple Inc. All Rights Reserved.
  
-*/
+ */
 
 #import <UIKit/UIKit.h>
 
-// Basic filter object. 
+// Basic filter object.
 @interface AccelerometerFilter : NSObject
 {
-	BOOL adaptive;
-	UIAccelerationValue x, y, z;
+    BOOL adaptive;
+    UIAccelerationValue x, y, z;
 }
 
 // Add a UIAcceleration to the filter.
@@ -69,8 +69,8 @@
 // A filter class to represent a lowpass filter
 @interface LowpassFilter : AccelerometerFilter
 {
-	double filterConstant;
-	UIAccelerationValue lastX, lastY, lastZ;
+    double filterConstant;
+    UIAccelerationValue lastX, lastY, lastZ;
 }
 
 -(id)initWithSampleRate:(double)rate cutoffFrequency:(double)freq;
@@ -80,8 +80,8 @@
 // A filter class to represent a highpass filter.
 @interface HighpassFilter : AccelerometerFilter
 {
-	double filterConstant;
-	UIAccelerationValue lastX, lastY, lastZ;
+    double filterConstant;
+    UIAccelerationValue lastX, lastY, lastZ;
 }
 
 -(id)initWithSampleRate:(double)rate cutoffFrequency:(double)freq;

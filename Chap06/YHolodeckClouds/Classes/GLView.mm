@@ -16,11 +16,11 @@
     m_phi = 0;
     m_velocity = vec2(0, 0);
     m_visibleButtons = 0;
-
+    
     if (self = [super initWithFrame:frame]) {
         CAEAGLLayer* eaglLayer = (CAEAGLLayer*) self.layer;
         eaglLayer.opaque = YES;
-
+        
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES1;
         m_context = [[EAGLContext alloc] initWithAPI:api];
         
@@ -30,12 +30,12 @@
         }
         
         m_resourceManager = CreateResourceManager();
-
+        
         NSLog(@"Using OpenGL ES 1.1");
         m_renderingEngine = CreateRenderingEngine(m_resourceManager);
-
+        
         m_locationManager = [[CLLocationManager alloc] init];
-
+        
 #if TARGET_IPHONE_SIMULATOR
         BOOL compassSupported = NO;
         BOOL accelSupported = NO;
@@ -58,31 +58,31 @@
             NSLog(@"Accelerometer is supported.");
             float updateFrequency = 60.0f;
             m_filter = [[LowpassFilter alloc] initWithSampleRate:updateFrequency
-                                              cutoffFrequency:5.0];
+                                                 cutoffFrequency:5.0];
             m_filter.adaptive = YES;
-
+            
             [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1.0 / updateFrequency];
             [[UIAccelerometer sharedAccelerometer] setDelegate:self];
         } else {
             NSLog(@"Accelerometer is NOT supported.");
             m_visibleButtons |= ButtonFlagsShowVertical;
         }
-
+        
         [m_context
-            renderbufferStorage:GL_RENDERBUFFER
-            fromDrawable: eaglLayer];
+         renderbufferStorage:GL_RENDERBUFFER
+         fromDrawable: eaglLayer];
         
         m_timestamp = CACurrentMediaTime();
-
+        
         m_renderingEngine->Initialize();
         [self drawView:nil];
         
         CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
-                                     selector:@selector(drawView:)];
+                                                  selector:@selector(drawView:)];
         
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                     forMode:NSDefaultRunLoopMode];
+                          forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
@@ -99,7 +99,7 @@
         m_theta -= speed * elapsedSeconds * m_velocity.x;
         m_phi += speed * elapsedSeconds * m_velocity.y;
     }
-
+    
     ButtonMask buttonFlags = m_visibleButtons;
     if (m_velocity.x < 0) buttonFlags |= ButtonFlagsPressingLeft;
     if (m_velocity.x > 0) buttonFlags |= ButtonFlagsPressingRight;
@@ -122,7 +122,7 @@ bool buttonHit(CGPoint location, int x, int y)
     UITouch* touch = [touches anyObject];
     CGPoint location  = [touch locationInView: self];
     float delta = 1;
-
+    
     if (m_visibleButtons & ButtonFlagsShowVertical) {
         if (buttonHit(location, 35, 240))
             m_velocity.y = -delta;
@@ -144,7 +144,7 @@ bool buttonHit(CGPoint location, int x, int y)
 }
 
 - (void) locationManager: (CLLocationManager*) manager
-         didUpdateHeading: (CLHeading*) heading
+        didUpdateHeading: (CLHeading*) heading
 {
     // Use magneticHeading rather than trueHeading to avoid usage of GPS:
     CLLocationDirection degrees = heading.magneticHeading;

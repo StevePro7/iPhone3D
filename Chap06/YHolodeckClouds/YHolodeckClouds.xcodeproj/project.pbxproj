@@ -100,7 +100,6 @@
 				80F544E21CC7A06500ED595E /* Other Sources */,
 				80F544DF1CC7A05000ED595E /* Resources */,
 				80F544D21CC79FF400ED595E /* Frameworks */,
-				80F544AB1CC79FA500ED595E /* YHolodeckClouds */,
 				80F544AA1CC79FA500ED595E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,21 +110,6 @@
 				80F544A91CC79FA500ED595E /* YHolodeckClouds.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		80F544AB1CC79FA500ED595E /* YHolodeckClouds */ = {
-			isa = PBXGroup;
-			children = (
-				80F544AC1CC79FA500ED595E /* Supporting Files */,
-			);
-			path = YHolodeckClouds;
-			sourceTree = "<group>";
-		};
-		80F544AC1CC79FA500ED595E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		80F544D21CC79FF400ED595E /* Frameworks */ = {

@@ -17,9 +17,9 @@ public:
     {
         if (file.find(".pvr") != string::npos)
             return LoadPvrImage(file);
-
+        
         m_hasPvrHeader = false;
-
+        
         NSString* basePath = [NSString stringWithUTF8String:file.c_str()];
         NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
         NSString* fullPath = [resourcePath stringByAppendingPathComponent:basePath];
@@ -90,7 +90,7 @@ public:
                 description.Format = TextureFormatRgba;
                 description.BitsPerComponent = 4;
                 break;
-            case OGL_PVRTC2:    
+            case OGL_PVRTC2:
                 description.Format = hasAlpha ? TextureFormatPvrtcRgba2 :
                 TextureFormatPvrtcRgb2;
                 break;
@@ -122,7 +122,7 @@ public:
     {
         m_imageData = 0;
     }
-
+    
 private:
     NSData* m_imageData;
     bool m_hasPvrHeader;

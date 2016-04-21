@@ -5,7 +5,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface GLView : UIView <CLLocationManagerDelegate,
-                            UIAccelerometerDelegate> {
+UIAccelerometerDelegate> {
 @private
     IRenderingEngine* m_renderingEngine;
     IResourceManager* m_resourceManager;
