@@ -48,7 +48,7 @@ struct Vertex {
 typedef std::vector<Vertex> VertexList;
 typedef std::vector<GLushort> IndexList;
 typedef std::vector<mat4> MatrixList;
-    
+
 struct Skeleton {
     IndexList Indices;
     VertexList Vertices;

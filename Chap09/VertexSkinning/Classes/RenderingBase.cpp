@@ -60,8 +60,8 @@ void RenderingBase::Initialize(int maxBoneCount, VertexList& vertices, IndexList
 void RenderingBase::AnimateSkeleton(float time, Skeleton& skeleton)
 {
     time *= 30.0f;
-//  time = 98; // For showing off pinching
-//  time = 70; // For the screenshot
+    //  time = 98; // For showing off pinching
+    //  time = 70; // For the screenshot
     int timeIndex = (int) time;
     int frameCount = sizeof(LongMoCap) / sizeof(LongMoCap[0]);
     
@@ -104,7 +104,7 @@ void RenderingBase::ComputeMatrices(const Skeleton& skeleton, MatrixList& matric
             orientation = (b - a) / length;
             midpoint = (a + b) * 0.5f;
         }
-
+        
         // Find the end points of the "unflexed" bone that sits at the origin:
         vec3 a(0, 0, 0);
         vec3 b(length, 0, 0);
@@ -132,7 +132,7 @@ void RenderingBase::ExtrudeLines(const Skeleton& skeleton, VertexList& triangles
     Vertex* destVertex = &triangles[0];
     IndexList::const_iterator lineIndex = skeleton.Indices.begin();
     for (int boneIndex = 0; boneIndex < BoneCount; ++boneIndex) {
-
+        
         float length;
         {
             vec3 a = skeleton.Vertices[*lineIndex++].Position;
@@ -215,18 +215,18 @@ void RenderingBase::GenerateBoneData(VertexList& triangles, int maxBoneCount)
     const float Delta = 1.0f / (float) NumSlices;
     Vertex* destVertex = &triangles[0];
     for (size_t boneIndex = 0; boneIndex < BoneCount; ++boneIndex) {
-
+        
         float blendWeight = boneIndex;
         float delta0 = 0;
         float delta1 = 0;
-
+        
         if (StickFigureBones[boneIndex].IsBlended)
         {
             delta0 = Delta;
             blendWeight -= 0.5f;
         }
         
-        if (boneIndex < BoneCount - 1 && 
+        if (boneIndex < BoneCount - 1 &&
             StickFigureBones[boneIndex + 1].IsBlended)
         {
             delta1 = Delta;
@@ -256,7 +256,7 @@ void RenderingBase::GenerateBoneData(VertexList& triangles, int maxBoneCount)
             destVertex->BoneWeights.x = blendWeight - index0;
             destVertex->BoneWeights.y = 1.0f - destVertex->BoneWeights.x;
             destVertex++;
-
+            
             blendWeight += (j < NumSlices / 2) ? delta0 : delta1;
         }
     }
@@ -268,7 +268,7 @@ GLuint RenderingBase::CreateTexture(const unsigned long* data)
     GLsizei w = header->Width;
     GLsizei h = header->Height;
     const unsigned long* texels = data + header->HeaderSize / 4;
-
+    
     GLuint name;
     glGenTextures(1, &name);
     glBindTexture(GL_TEXTURE_2D, name);
@@ -291,6 +291,6 @@ GLuint RenderingBase::CreateTexture(const unsigned long* data)
         default:
             printf("Unknown format.\n");
     }
-
+    
     return name;
 }

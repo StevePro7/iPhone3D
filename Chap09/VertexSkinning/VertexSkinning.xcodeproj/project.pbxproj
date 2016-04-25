@@ -87,7 +87,6 @@
 				8077AD8B1CCE4C1800C71F6C /* Other Suorces */,
 				8077AD861CCE4BFB00C71F6C /* Resources */,
 				8077AD7B1CCE4BAA00C71F6C /* Frameworks */,
-				8077AD541CCE4B0700C71F6C /* VertexSkinning */,
 				8077AD531CCE4B0700C71F6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,21 +97,6 @@
 				8077AD521CCE4B0700C71F6C /* VertexSkinning.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8077AD541CCE4B0700C71F6C /* VertexSkinning */ = {
-			isa = PBXGroup;
-			children = (
-				8077AD551CCE4B0700C71F6C /* Supporting Files */,
-			);
-			path = VertexSkinning;
-			sourceTree = "<group>";
-		};
-		8077AD551CCE4B0700C71F6C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8077AD7B1CCE4BAA00C71F6C /* Frameworks */ = {
