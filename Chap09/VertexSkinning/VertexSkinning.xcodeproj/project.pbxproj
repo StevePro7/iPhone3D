@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8077AD581CCE4B0700C71F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD571CCE4B0700C71F6C /* main.m */; };
+		8077AD7D1CCE4BCB00C71F6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8077AD7C1CCE4BCB00C71F6C /* UIKit.framework */; };
+		8077AD7F1CCE4BD700C71F6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8077AD7E1CCE4BD700C71F6C /* CoreGraphics.framework */; };
+		8077AD811CCE4BDD00C71F6C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8077AD801CCE4BDD00C71F6C /* OpenGLES.framework */; };
+		8077AD831CCE4BE400C71F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8077AD821CCE4BE400C71F6C /* Foundation.framework */; };
+		8077AD851CCE4BED00C71F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8077AD841CCE4BED00C71F6C /* QuartzCore.framework */; };
+		8077AD891CCE4C1100C71F6C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8077AD871CCE4C1100C71F6C /* Default.png */; };
+		8077AD8A1CCE4C1100C71F6C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8077AD881CCE4C1100C71F6C /* Icon.png */; };
+		8077AD991CCE4C5D00C71F6C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD8E1CCE4C5D00C71F6C /* AppDelegate.mm */; };
+		8077AD9A1CCE4C5D00C71F6C /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD8F1CCE4C5D00C71F6C /* ApplicationEngine.cpp */; };
+		8077AD9B1CCE4C5D00C71F6C /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD911CCE4C5D00C71F6C /* GLView.mm */; };
+		8077AD9C1CCE4C5D00C71F6C /* RenderingBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD941CCE4C5D00C71F6C /* RenderingBase.cpp */; };
+		8077AD9D1CCE4C5D00C71F6C /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD961CCE4C5D00C71F6C /* RenderingEngine.ES1.cpp */; };
+		8077AD9E1CCE4C5D00C71F6C /* RenderingEngine.ES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8077AD971CCE4C5D00C71F6C /* RenderingEngine.ES2.cpp */; };
+		8077ADA51CCE4C9700C71F6C /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8077ADA11CCE4C9700C71F6C /* Circle.png */; };
+		8077ADA61CCE4C9700C71F6C /* GenerateCircle.py in Resources */ = {isa = PBXBuildFile; fileRef = 8077ADA21CCE4C9700C71F6C /* GenerateCircle.py */; };
+		8077ADA71CCE4C9700C71F6C /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8077ADA41CCE4C9700C71F6C /* Tile.png */; };
+		8077ADAB1CCE4CA400C71F6C /* LongMoCap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8077ADA91CCE4CA400C71F6C /* LongMoCap.c */; };
+		8077ADAE1CCE4CB600C71F6C /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 8077ADAD1CCE4CB600C71F6C /* Shaders */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8077AD521CCE4B0700C71F6C /* VertexSkinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VertexSkinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8077AD561CCE4B0700C71F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = VertexSkinning/Info.plist; sourceTree = "<group>"; };
+		8077AD571CCE4B0700C71F6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VertexSkinning/main.m; sourceTree = "<group>"; };
+		8077AD7C1CCE4BCB00C71F6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8077AD7E1CCE4BD700C71F6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8077AD801CCE4BDD00C71F6C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8077AD821CCE4BE400C71F6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8077AD841CCE4BED00C71F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8077AD871CCE4C1100C71F6C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8077AD881CCE4C1100C71F6C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8077AD8D1CCE4C5D00C71F6C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		8077AD8E1CCE4C5D00C71F6C /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		8077AD8F1CCE4C5D00C71F6C /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.cpp; path = Classes/ApplicationEngine.cpp; sourceTree = "<group>"; };
+		8077AD901CCE4C5D00C71F6C /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		8077AD911CCE4C5D00C71F6C /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		8077AD921CCE4C5D00C71F6C /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		8077AD931CCE4C5D00C71F6C /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		8077AD941CCE4C5D00C71F6C /* RenderingBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingBase.cpp; path = Classes/RenderingBase.cpp; sourceTree = "<group>"; };
+		8077AD951CCE4C5D00C71F6C /* RenderingBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RenderingBase.hpp; path = Classes/RenderingBase.hpp; sourceTree = "<group>"; };
+		8077AD961CCE4C5D00C71F6C /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES1.cpp; path = Classes/RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		8077AD971CCE4C5D00C71F6C /* RenderingEngine.ES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES2.cpp; path = Classes/RenderingEngine.ES2.cpp; sourceTree = "<group>"; };
+		8077AD981CCE4C5D00C71F6C /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		8077ADA01CCE4C9700C71F6C /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = Textures/Circle.h; sourceTree = "<group>"; };
+		8077ADA11CCE4C9700C71F6C /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Circle.png; path = Textures/Circle.png; sourceTree = "<group>"; };
+		8077ADA21CCE4C9700C71F6C /* GenerateCircle.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = GenerateCircle.py; path = Textures/GenerateCircle.py; sourceTree = "<group>"; };
+		8077ADA31CCE4C9700C71F6C /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = Textures/Tile.h; sourceTree = "<group>"; };
+		8077ADA41CCE4C9700C71F6C /* Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tile.png; path = Textures/Tile.png; sourceTree = "<group>"; };
+		8077ADA91CCE4CA400C71F6C /* LongMoCap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LongMoCap.c; path = MotionCapture/LongMoCap.c; sourceTree = "<group>"; };
+		8077ADAA1CCE4CA400C71F6C /* StickFigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickFigure.h; path = MotionCapture/StickFigure.h; sourceTree = "<group>"; };
+		8077ADAD1CCE4CB600C71F6C /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8077AD4F1CCE4B0700C71F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8077AD851CCE4BED00C71F6C /* QuartzCore.framework in Frameworks */,
+				8077AD831CCE4BE400C71F6C /* Foundation.framework in Frameworks */,
+				8077AD811CCE4BDD00C71F6C /* OpenGLES.framework in Frameworks */,
+				8077AD7F1CCE4BD700C71F6C /* CoreGraphics.framework in Frameworks */,
+				8077AD7D1CCE4BCB00C71F6C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8077AD491CCE4B0700C71F6C = {
+			isa = PBXGroup;
+			children = (
+				8077ADAD1CCE4CB600C71F6C /* Shaders */,
+				8077ADA81CCE4C9A00C71F6C /* MoCap */,
+				8077AD9F1CCE4C8300C71F6C /* Textures */,
+				8077AD8C1CCE4C5400C71F6C /* Classes */,
+				8077AD8B1CCE4C1800C71F6C /* Other Suorces */,
+				8077AD861CCE4BFB00C71F6C /* Resources */,
+				8077AD7B1CCE4BAA00C71F6C /* Frameworks */,
+				8077AD541CCE4B0700C71F6C /* VertexSkinning */,
+				8077AD531CCE4B0700C71F6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8077AD531CCE4B0700C71F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD521CCE4B0700C71F6C /* VertexSkinning.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8077AD541CCE4B0700C71F6C /* VertexSkinning */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD551CCE4B0700C71F6C /* Supporting Files */,
+			);
+			path = VertexSkinning;
+			sourceTree = "<group>";
+		};
+		8077AD551CCE4B0700C71F6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8077AD7B1CCE4BAA00C71F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD841CCE4BED00C71F6C /* QuartzCore.framework */,
+				8077AD821CCE4BE400C71F6C /* Foundation.framework */,
+				8077AD801CCE4BDD00C71F6C /* OpenGLES.framework */,
+				8077AD7E1CCE4BD700C71F6C /* CoreGraphics.framework */,
+				8077AD7C1CCE4BCB00C71F6C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8077AD861CCE4BFB00C71F6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD871CCE4C1100C71F6C /* Default.png */,
+				8077AD881CCE4C1100C71F6C /* Icon.png */,
+				8077AD561CCE4B0700C71F6C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8077AD8B1CCE4C1800C71F6C /* Other Suorces */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD571CCE4B0700C71F6C /* main.m */,
+			);
+			name = "Other Suorces";
+			sourceTree = "<group>";
+		};
+		8077AD8C1CCE4C5400C71F6C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8077AD8D1CCE4C5D00C71F6C /* AppDelegate.h */,
+				8077AD8E1CCE4C5D00C71F6C /* AppDelegate.mm */,
+				8077AD8F1CCE4C5D00C71F6C /* ApplicationEngine.cpp */,
+				8077AD901CCE4C5D00C71F6C /* GLView.h */,
+				8077AD911CCE4C5D00C71F6C /* GLView.mm */,
+				8077AD921CCE4C5D00C71F6C /* Interfaces.hpp */,
+				8077AD931CCE4C5D00C71F6C /* Matrix.hpp */,
+				8077AD941CCE4C5D00C71F6C /* RenderingBase.cpp */,
+				8077AD951CCE4C5D00C71F6C /* RenderingBase.hpp */,
+				8077AD961CCE4C5D00C71F6C /* RenderingEngine.ES1.cpp */,
+				8077AD971CCE4C5D00C71F6C /* RenderingEngine.ES2.cpp */,
+				8077AD981CCE4C5D00C71F6C /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8077AD9F1CCE4C8300C71F6C /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				8077ADA01CCE4C9700C71F6C /* Circle.h */,
+				8077ADA11CCE4C9700C71F6C /* Circle.png */,
+				8077ADA21CCE4C9700C71F6C /* GenerateCircle.py */,
+				8077ADA31CCE4C9700C71F6C /* Tile.h */,
+				8077ADA41CCE4C9700C71F6C /* Tile.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		8077ADA81CCE4C9A00C71F6C /* MoCap */ = {
+			isa = PBXGroup;
+			children = (
+				8077ADA91CCE4CA400C71F6C /* LongMoCap.c */,
+				8077ADAA1CCE4CA400C71F6C /* StickFigure.h */,
+			);
+			name = MoCap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8077AD511CCE4B0700C71F6C /* VertexSkinning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8077AD751CCE4B0700C71F6C /* Build configuration list for PBXNativeTarget "VertexSkinning" */;
+			buildPhases = (
+				8077AD4E1CCE4B0700C71F6C /* Sources */,
+				8077AD4F1CCE4B0700C71F6C /* Frameworks */,
+				8077AD501CCE4B0700C71F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VertexSkinning;
+			productName = VertexSkinning;
+			productReference = 8077AD521CCE4B0700C71F6C /* VertexSkinning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8077AD4A1CCE4B0700C71F6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					8077AD511CCE4B0700C71F6C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 8077AD4D1CCE4B0700C71F6C /* Build configuration list for PBXProject "VertexSkinning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8077AD491CCE4B0700C71F6C;
+			productRefGroup = 8077AD531CCE4B0700C71F6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8077AD511CCE4B0700C71F6C /* VertexSkinning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8077AD501CCE4B0700C71F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8077AD8A1CCE4C1100C71F6C /* Icon.png in Resources */,
+				8077ADA61CCE4C9700C71F6C /* GenerateCircle.py in Resources */,
+				8077ADA71CCE4C9700C71F6C /* Tile.png in Resources */,
+				8077ADAE1CCE4CB600C71F6C /* Shaders in Resources */,
+				8077ADA51CCE4C9700C71F6C /* Circle.png in Resources */,
+				8077AD891CCE4C1100C71F6C /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8077AD4E1CCE4B0700C71F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8077AD9A1CCE4C5D00C71F6C /* ApplicationEngine.cpp in Sources */,
+				8077AD9C1CCE4C5D00C71F6C /* RenderingBase.cpp in Sources */,
+				8077AD991CCE4C5D00C71F6C /* AppDelegate.mm in Sources */,
+				8077AD581CCE4B0700C71F6C /* main.m in Sources */,
+				8077ADAB1CCE4CA400C71F6C /* LongMoCap.c in Sources */,
+				8077AD9B1CCE4C5D00C71F6C /* GLView.mm in Sources */,
+				8077AD9E1CCE4C5D00C71F6C /* RenderingEngine.ES2.cpp in Sources */,
+				8077AD9D1CCE4C5D00C71F6C /* RenderingEngine.ES1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8077AD731CCE4B0700C71F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8077AD741CCE4B0700C71F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8077AD761CCE4B0700C71F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = VertexSkinning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8077AD771CCE4B0700C71F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = VertexSkinning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8077AD4D1CCE4B0700C71F6C /* Build configuration list for PBXProject "VertexSkinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8077AD731CCE4B0700C71F6C /* Debug */,
+				8077AD741CCE4B0700C71F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8077AD751CCE4B0700C71F6C /* Build configuration list for PBXNativeTarget "VertexSkinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8077AD761CCE4B0700C71F6C /* Debug */,
+				8077AD771CCE4B0700C71F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8077AD4A1CCE4B0700C71F6C /* Project object */;
+}
