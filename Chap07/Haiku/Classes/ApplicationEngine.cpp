@@ -21,17 +21,17 @@ private:
     bool m_dragging;
     IRenderingEngine* m_renderingEngine;
 };
-    
+
 IApplicationEngine* CreateApplicationEngine(IRenderingEngine* renderingEngine)
 {
     return new ApplicationEngine(renderingEngine);
 }
 
 ApplicationEngine::ApplicationEngine(IRenderingEngine* renderingEngine) :
-    m_renderingEngine(renderingEngine),
-    m_dragging(false),
-    m_pageCurl(0),
-    m_timestamp(0)
+m_renderingEngine(renderingEngine),
+m_dragging(false),
+m_pageCurl(0),
+m_timestamp(0)
 {
 }
 
@@ -48,22 +48,22 @@ void ApplicationEngine::Initialize(int width, int height)
 void ApplicationEngine::Render() const
 {
     string poem1 = "Haikus are easy\n"
-                   "But sometimes they don't make sense\n"
-                   "Refrigerator\n";
+    "But sometimes they don't make sense\n"
+    "Refrigerator\n";
     
     string poem2 = "Chaos reigns within.\n"
-                   "Reflect, repent, and reboot.\n"
-                   "Order shall return.";
+    "Reflect, repent, and reboot.\n"
+    "Order shall return.";
     
     float pageCurl = m_pageCurl;
-
+    
     if (m_dragging)
         pageCurl += m_dragStart - m_dragEnd;
     
     if (pageCurl < 0)
         pageCurl = 0;
     pageCurl /= 480.0f;
-
+    
     m_renderingEngine->Render(poem1, poem2, pageCurl);
 }
 
@@ -88,7 +88,7 @@ void ApplicationEngine::OnFingerUp(ivec2 location)
 void ApplicationEngine::OnFingerDown(ivec2 location)
 {
     if (!m_dragging) {
-        m_dragging = true;  
+        m_dragging = true;
         m_dragStart = m_dragEnd = location.y;
     }
 }
