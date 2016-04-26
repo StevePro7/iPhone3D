@@ -62,19 +62,19 @@ public:
         char digits[MaxNumDigits + 1] = {0};
         sprintf(digits, "%d", (int) fps);
         vec2 pos(5, 10);
-
+        
         for (char* digit = &digits[0]; *digit; ++digit) {
             int glyphIndex = *digit - '0';
             const Glyph& glyph = NumeralGlyphs[glyphIndex];
             RenderGlyph(glyph, pos);
             pos.x += glyph.Metrics.XAdvance;
         }
-                  
+        
         glDisable(GL_BLEND);
     }
     
 private:
-
+    
     static const int MaxNumDigits = 3;
     
     uint64_t GetElapsedNanoseconds()
@@ -92,19 +92,19 @@ private:
     }
     
     void RenderGlyph(const Glyph& glyph, vec2 position)
-    { 
+    {
         position.y -= glyph.Metrics.Height + glyph.Metrics.YBearing;
-
+        
         int box[] = { glyph.Position.X,
-                      (int)(m_textureSize.y - 1 + glyph.Position.Y - glyph.Metrics.Height),
-                      glyph.Metrics.Width + 1,
-                      glyph.Metrics.Height + 1 };
-
+            (int)(m_textureSize.y - 1 + glyph.Position.Y - glyph.Metrics.Height),
+            glyph.Metrics.Width + 1,
+            glyph.Metrics.Height + 1 };
+        
         glTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_CROP_RECT_OES, box);
         glDrawTexfOES(position.x, position.y, 0,
                       glyph.Metrics.Width + 1, glyph.Metrics.Height + 1);
     }
-
+    
     double m_filterConstant;
     double m_fps;
     uint64_t m_previousTime;

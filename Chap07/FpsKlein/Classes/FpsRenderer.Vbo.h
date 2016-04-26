@@ -99,7 +99,7 @@ public:
     }
     
 private:
-
+    
     static const int MaxNumDigits = 3;
     static const int VertsPerDigit = 6;
     static const int FloatsPerVert = 4;
@@ -121,7 +121,7 @@ private:
         
         return duration;
     }
-
+    
     float* WriteGlyphVertex(const Glyph& glyph, vec2 position, int corner, float* vertex)
     {
         vec2 texcoord;
