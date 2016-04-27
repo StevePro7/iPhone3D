@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80658CC41CCEB9A200CD8C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80658CC31CCEB9A200CD8C0A /* main.m */; };
+		80658CE91CCEB9F600CD8C0A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80658CE81CCEB9F600CD8C0A /* QuartzCore.framework */; };
+		80658CEB1CCEB9FE00CD8C0A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80658CEA1CCEB9FE00CD8C0A /* OpenGLES.framework */; };
+		80658CED1CCEBA0400CD8C0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80658CEC1CCEBA0400CD8C0A /* UIKit.framework */; };
+		80658CEF1CCEBA0A00CD8C0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80658CEE1CCEBA0A00CD8C0A /* Foundation.framework */; };
+		80658CF11CCEBA1000CD8C0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80658CF01CCEBA1000CD8C0A /* CoreGraphics.framework */; };
+		80658CF51CCEBA1F00CD8C0A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80658CF31CCEBA1F00CD8C0A /* Default.png */; };
+		80658CF61CCEBA1F00CD8C0A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80658CF41CCEBA1F00CD8C0A /* Icon.png */; };
+		80658D021CCEBA4400CD8C0A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80658CFA1CCEBA4400CD8C0A /* AppDelegate.mm */; };
+		80658D031CCEBA4400CD8C0A /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80658CFC1CCEBA4400CD8C0A /* GLView.mm */; };
+		80658D041CCEBA4400CD8C0A /* RenderingEngine.ES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80658D001CCEBA4400CD8C0A /* RenderingEngine.ES2.cpp */; };
+		80658D0A1CCEBA5100CD8C0A /* Generate.py in Resources */ = {isa = PBXBuildFile; fileRef = 80658D061CCEBA5100CD8C0A /* Generate.py */; };
+		80658D0B1CCEBA5100CD8C0A /* TombWindow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80658D081CCEBA5100CD8C0A /* TombWindow.jpg */; };
+		80658D0C1CCEBA5100CD8C0A /* TombWindow.png in Resources */ = {isa = PBXBuildFile; fileRef = 80658D091CCEBA5100CD8C0A /* TombWindow.png */; };
+		80658D121CCEBA5E00CD8C0A /* Blitting.es2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 80658D0E1CCEBA5E00CD8C0A /* Blitting.es2.frag */; };
+		80658D131CCEBA5E00CD8C0A /* Blitting.es2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 80658D0F1CCEBA5E00CD8C0A /* Blitting.es2.vert */; };
+		80658D141CCEBA5E00CD8C0A /* Lighting.es2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 80658D101CCEBA5E00CD8C0A /* Lighting.es2.frag */; };
+		80658D151CCEBA5E00CD8C0A /* Lighting.es2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 80658D111CCEBA5E00CD8C0A /* Lighting.es2.vert */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80658CBE1CCEB9A200CD8C0A /* DcrudeBloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DcrudeBloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80658CC21CCEB9A200CD8C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DcrudeBloom/Info.plist; sourceTree = "<group>"; };
+		80658CC31CCEB9A200CD8C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DcrudeBloom/main.m; sourceTree = "<group>"; };
+		80658CE81CCEB9F600CD8C0A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80658CEA1CCEB9FE00CD8C0A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80658CEC1CCEBA0400CD8C0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80658CEE1CCEBA0A00CD8C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80658CF01CCEBA1000CD8C0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80658CF31CCEBA1F00CD8C0A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80658CF41CCEBA1F00CD8C0A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		80658CF91CCEBA4400CD8C0A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		80658CFA1CCEBA4400CD8C0A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
+		80658CFB1CCEBA4400CD8C0A /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		80658CFC1CCEBA4400CD8C0A /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = Classes/GLView.mm; sourceTree = "<group>"; };
+		80658CFD1CCEBA4400CD8C0A /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Interfaces.hpp; path = Classes/Interfaces.hpp; sourceTree = "<group>"; };
+		80658CFE1CCEBA4400CD8C0A /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = Classes/Matrix.hpp; sourceTree = "<group>"; };
+		80658CFF1CCEBA4400CD8C0A /* ParametricSurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParametricSurface.hpp; path = Classes/ParametricSurface.hpp; sourceTree = "<group>"; };
+		80658D001CCEBA4400CD8C0A /* RenderingEngine.ES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine.ES2.cpp; path = Classes/RenderingEngine.ES2.cpp; sourceTree = "<group>"; };
+		80658D011CCEBA4400CD8C0A /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = Classes/Vector.hpp; sourceTree = "<group>"; };
+		80658D061CCEBA5100CD8C0A /* Generate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Generate.py; path = Textures/Generate.py; sourceTree = "<group>"; };
+		80658D071CCEBA5100CD8C0A /* TombWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TombWindow.h; path = Textures/TombWindow.h; sourceTree = "<group>"; };
+		80658D081CCEBA5100CD8C0A /* TombWindow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TombWindow.jpg; path = Textures/TombWindow.jpg; sourceTree = "<group>"; };
+		80658D091CCEBA5100CD8C0A /* TombWindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TombWindow.png; path = Textures/TombWindow.png; sourceTree = "<group>"; };
+		80658D0E1CCEBA5E00CD8C0A /* Blitting.es2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Blitting.es2.frag; path = Shaders/Blitting.es2.frag; sourceTree = "<group>"; };
+		80658D0F1CCEBA5E00CD8C0A /* Blitting.es2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Blitting.es2.vert; path = Shaders/Blitting.es2.vert; sourceTree = "<group>"; };
+		80658D101CCEBA5E00CD8C0A /* Lighting.es2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Lighting.es2.frag; path = Shaders/Lighting.es2.frag; sourceTree = "<group>"; };
+		80658D111CCEBA5E00CD8C0A /* Lighting.es2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Lighting.es2.vert; path = Shaders/Lighting.es2.vert; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80658CBB1CCEB9A200CD8C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80658CF11CCEBA1000CD8C0A /* CoreGraphics.framework in Frameworks */,
+				80658CEF1CCEBA0A00CD8C0A /* Foundation.framework in Frameworks */,
+				80658CED1CCEBA0400CD8C0A /* UIKit.framework in Frameworks */,
+				80658CEB1CCEB9FE00CD8C0A /* OpenGLES.framework in Frameworks */,
+				80658CE91CCEB9F600CD8C0A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80658CB51CCEB9A200CD8C0A = {
+			isa = PBXGroup;
+			children = (
+				80658D0D1CCEBA5500CD8C0A /* Shaders */,
+				80658D051CCEBA4600CD8C0A /* Textures */,
+				80658CF81CCEBA3600CD8C0A /* Classes */,
+				80658CF71CCEBA2500CD8C0A /* Other Sources */,
+				80658CF21CCEBA1300CD8C0A /* Resources */,
+				80658CE71CCEB9E100CD8C0A /* Frameworks */,
+				80658CBF1CCEB9A200CD8C0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80658CBF1CCEB9A200CD8C0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80658CBE1CCEB9A200CD8C0A /* DcrudeBloom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80658CE71CCEB9E100CD8C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80658CF01CCEBA1000CD8C0A /* CoreGraphics.framework */,
+				80658CEE1CCEBA0A00CD8C0A /* Foundation.framework */,
+				80658CEC1CCEBA0400CD8C0A /* UIKit.framework */,
+				80658CEA1CCEB9FE00CD8C0A /* OpenGLES.framework */,
+				80658CE81CCEB9F600CD8C0A /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80658CF21CCEBA1300CD8C0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80658CF31CCEBA1F00CD8C0A /* Default.png */,
+				80658CC21CCEB9A200CD8C0A /* Info.plist */,
+				80658CF41CCEBA1F00CD8C0A /* Icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80658CF71CCEBA2500CD8C0A /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80658CC31CCEB9A200CD8C0A /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80658CF81CCEBA3600CD8C0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80658CF91CCEBA4400CD8C0A /* AppDelegate.h */,
+				80658CFA1CCEBA4400CD8C0A /* AppDelegate.mm */,
+				80658CFB1CCEBA4400CD8C0A /* GLView.h */,
+				80658CFC1CCEBA4400CD8C0A /* GLView.mm */,
+				80658CFD1CCEBA4400CD8C0A /* Interfaces.hpp */,
+				80658CFE1CCEBA4400CD8C0A /* Matrix.hpp */,
+				80658CFF1CCEBA4400CD8C0A /* ParametricSurface.hpp */,
+				80658D001CCEBA4400CD8C0A /* RenderingEngine.ES2.cpp */,
+				80658D011CCEBA4400CD8C0A /* Vector.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		80658D051CCEBA4600CD8C0A /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				80658D061CCEBA5100CD8C0A /* Generate.py */,
+				80658D071CCEBA5100CD8C0A /* TombWindow.h */,
+				80658D081CCEBA5100CD8C0A /* TombWindow.jpg */,
+				80658D091CCEBA5100CD8C0A /* TombWindow.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		80658D0D1CCEBA5500CD8C0A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				80658D0E1CCEBA5E00CD8C0A /* Blitting.es2.frag */,
+				80658D0F1CCEBA5E00CD8C0A /* Blitting.es2.vert */,
+				80658D101CCEBA5E00CD8C0A /* Lighting.es2.frag */,
+				80658D111CCEBA5E00CD8C0A /* Lighting.es2.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80658CBD1CCEB9A200CD8C0A /* DcrudeBloom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80658CE11CCEB9A200CD8C0A /* Build configuration list for PBXNativeTarget "DcrudeBloom" */;
+			buildPhases = (
+				80658CBA1CCEB9A200CD8C0A /* Sources */,
+				80658CBB1CCEB9A200CD8C0A /* Frameworks */,
+				80658CBC1CCEB9A200CD8C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DcrudeBloom;
+			productName = DcrudeBloom;
+			productReference = 80658CBE1CCEB9A200CD8C0A /* DcrudeBloom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80658CB61CCEB9A200CD8C0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Steven Boland";
+				TargetAttributes = {
+					80658CBD1CCEB9A200CD8C0A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 80658CB91CCEB9A200CD8C0A /* Build configuration list for PBXProject "DcrudeBloom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80658CB51CCEB9A200CD8C0A;
+			productRefGroup = 80658CBF1CCEB9A200CD8C0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80658CBD1CCEB9A200CD8C0A /* DcrudeBloom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80658CBC1CCEB9A200CD8C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80658CF61CCEBA1F00CD8C0A /* Icon.png in Resources */,
+				80658D151CCEBA5E00CD8C0A /* Lighting.es2.vert in Resources */,
+				80658CF51CCEBA1F00CD8C0A /* Default.png in Resources */,
+				80658D0A1CCEBA5100CD8C0A /* Generate.py in Resources */,
+				80658D131CCEBA5E00CD8C0A /* Blitting.es2.vert in Resources */,
+				80658D0B1CCEBA5100CD8C0A /* TombWindow.jpg in Resources */,
+				80658D141CCEBA5E00CD8C0A /* Lighting.es2.frag in Resources */,
+				80658D121CCEBA5E00CD8C0A /* Blitting.es2.frag in Resources */,
+				80658D0C1CCEBA5100CD8C0A /* TombWindow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80658CBA1CCEB9A200CD8C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80658D041CCEBA4400CD8C0A /* RenderingEngine.ES2.cpp in Sources */,
+				80658D031CCEBA4400CD8C0A /* GLView.mm in Sources */,
+				80658D021CCEBA4400CD8C0A /* AppDelegate.mm in Sources */,
+				80658CC41CCEB9A200CD8C0A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80658CDF1CCEB9A200CD8C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80658CE01CCEB9A200CD8C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80658CE21CCEB9A200CD8C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DcrudeBloom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80658CE31CCEB9A200CD8C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DcrudeBloom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80658CB91CCEB9A200CD8C0A /* Build configuration list for PBXProject "DcrudeBloom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80658CDF1CCEB9A200CD8C0A /* Debug */,
+				80658CE01CCEB9A200CD8C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80658CE11CCEB9A200CD8C0A /* Build configuration list for PBXNativeTarget "DcrudeBloom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80658CE21CCEB9A200CD8C0A /* Debug */,
+				80658CE31CCEB9A200CD8C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80658CB61CCEB9A200CD8C0A /* Project object */;
+}
