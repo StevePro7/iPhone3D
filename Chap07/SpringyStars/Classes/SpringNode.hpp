@@ -41,13 +41,13 @@ public:
         
         NeighborList::const_iterator n = m_neighbors.begin();
         for (; n != m_neighbors.end(); ++n) {
-
+            
             // Compute the spring force:
             vec2 v = (*n)->m_position - m_position;
             float length = v.Length();
             vec2 direction = v.Normalized();
             vec2 restoringForce = direction * StiffnessConstant * (length - RestLength);
-
+            
             // Compute the damping force:
             vec2 relativeVelocity = (*n)->m_velocity - m_velocity;
             vec2 dampingForce = relativeVelocity * DampingConstant;
